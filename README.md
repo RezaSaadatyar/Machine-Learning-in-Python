@@ -1,5 +1,5 @@
 #### Machine Learning in Python
-All classifiers in machine learning - step by step
+> All classifiers in machine learning - step by step
 - Decision Tree
 - Random Forest
 - Naive Bayes
