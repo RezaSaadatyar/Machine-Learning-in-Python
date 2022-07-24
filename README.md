@@ -7,3 +7,7 @@
 - K-Nearest Neighbor
 - Logistic Regression
 - Support Vector Machine (SVM)
+
+
+
+
