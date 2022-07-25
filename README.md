@@ -9,5 +9,11 @@
 - Support Vector Machine (SVM)
 
 
-
+> ###### Feature selection methods:
+>  - Filter method: use statistical tests
+>    - Correleation
+>    - Mutual Information
+>  - Warpper method: use cross-validation
+>  - Embedded method
+> Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 
