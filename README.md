@@ -9,11 +9,21 @@
 - Support Vector Machine (SVM)
 
 
-> ###### Feature selection methods:
->  - Filter method: use statistical tests
->    - Correleation
->    - Mutual Information
->  - Warpper method: use cross-validation
->  - Embedded method
+> **Dimensionality Reduction:**
+> 
+> Feature selection methods:
+>   - Filter method: 
+>     - Correleation
+>     - Mutual Information
+>     - t-test
+>   - Warpper method: use cross-validation
+>     - Sequential forward selection (SFS)
+>     - Sequential backward selection (SBS)
+>     - Plus-L minus-R selection (LRS) 
+>   - Embedded method
+>   
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
+> 
+> Feature extraction:
+>   - PCA
 
