@@ -10,7 +10,7 @@
 
 
 > **Dimensionality Reduction:**
-
+>
 > Feature selection methods:
 >   - Filter method: 
 >     - Correleation
