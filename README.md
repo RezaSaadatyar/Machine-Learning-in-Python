@@ -26,6 +26,5 @@
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 > 
 > Feature extraction:
->   - Principal Component Analysis (PCA)
->   - Linear Discrimination Analysis (LDA)
-
+>   - Principal Component Analysis (PCA): Maximising the variance of the whole set
+>   - Linear Discrimination Analysis (LDA): Maximising the distance between groups 
