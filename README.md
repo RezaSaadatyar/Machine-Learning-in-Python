@@ -10,7 +10,7 @@
 
 
 > **Dimensionality Reduction:**
-> 
+>  Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
 > Feature selection methods:
 >   - Filter method: 
 >     - Correleation
