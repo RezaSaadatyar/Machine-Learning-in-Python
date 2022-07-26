@@ -10,12 +10,13 @@
 
 
 > **Dimensionality Reduction:**
->  Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
+
 > Feature selection methods:
 >   - Filter method: 
 >     - Correleation
 >     - Mutual Information
 >     - t-test
+>     -  Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
 >   - Warpper method: use cross-validation
 >     - Sequential forward selection (SFS)
 >     - Sequential backward selection (SBS)
@@ -25,5 +26,6 @@
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 > 
 > Feature extraction:
->   - PCA
+>   - Principal Component Analysis (PCA)
+>   - Linear Discrimination Analysis (LDA)
 
