@@ -28,3 +28,6 @@
 > Feature extraction:
 >   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
 >   - Linear Discrimination Analysis (LDA): Maximising the distance between groups 
+
+> **Clustering:**
+>   - K-Means: It is not suitable for disovering clusters that are not hyper-spheres.
