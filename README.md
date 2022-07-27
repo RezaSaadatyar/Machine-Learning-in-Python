@@ -1,5 +1,5 @@
 #### Machine Learning in Python
-> All classifiers in machine learning - step by step
+> ***All classifiers in machine learning - step by step***
 >- Decision Tree
 >- Random Forest
 >- Naive Bayes
@@ -33,7 +33,7 @@
 >   
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 > 
-> Feature extraction:
+> Feature extraction:<br/>
 >   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
 >   - Linear Discrimination Analysis (LDA): Maximising the distance between groups 
 
@@ -46,6 +46,16 @@
 >       - Divisible method
 >  - 3. Density-based clustering
 >        - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
->    
-> 
->   
+
+>**Types of outliers:**
+> - 1. Global outliers
+> - 2. Collective outliers
+> - 3. Contextual outliers<br/>
+> <br/>
+>**Outlier detection methods:**
+> - 1. Supervised methods
+> - 2. Unsupervised methods
+>      - Clustering-Based
+>      - Proximity-Based
+>      - Classification-Based
+>      - Statistical
