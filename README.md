@@ -3,15 +3,25 @@
 - Decision Tree
 - Random Forest
 - Naive Bayes
+
+$$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$
+
+$$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$
+    
 - Gradient Boosting
-- K-Nearest Neighbor
+- K-Nearest Neighbor (KNN(D, d, k))
+  1. compute the distance between d and every example in D
+  2. Choose the k example in D that are nearest to d
+  3. Assign d the class that is the most frequent class in the majority class
+  4. Where k is very small, the model is complex and hence we overfit
+  5. Where k is very large, the model is simple and we underfit
 - Logistic Regression
 - Support Vector Machine (SVM)
 
 
 > **Dimensionality Reduction:**
->
-> Feature selection methods:
+>\n",
+> Feature selection methods:n",
 >   - Filter method: 
 >     - Correleation
 >     - Mutual Information
@@ -31,3 +41,4 @@
 
 > **Clustering:**
 >   - K-Means: It is not suitable for disovering clusters that are not hyper-spheres.
+>   
