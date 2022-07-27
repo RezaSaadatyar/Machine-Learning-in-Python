@@ -50,8 +50,8 @@
 >**Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
-> - 3. Contextual outliers<br/>
-> <br/>
+> - 3. Contextual outliers
+> 
 >**Outlier detection methods:**
 > - 1. Supervised methods
 > - 2. Unsupervised methods
