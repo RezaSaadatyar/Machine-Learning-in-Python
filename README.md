@@ -62,4 +62,6 @@
 >      - Classification-Based
 >      - Statistical
 >        - Boxplot method
+>        - Histogram method
+>        
 >        
