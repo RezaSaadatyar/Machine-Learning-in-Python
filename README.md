@@ -45,7 +45,7 @@
 >       - Agglomerative method
 >       - Divisible method
 >  - 3. Density-based clustering
->       - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
+>        - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
 >    
 > 
 >   
