@@ -61,3 +61,5 @@
 >        - Density Based
 >      - Classification-Based
 >      - Statistical
+>        - Boxplot method
+>        
