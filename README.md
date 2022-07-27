@@ -57,5 +57,7 @@
 > - 2. Unsupervised methods
 >      - Clustering-Based
 >      - Proximity-Based
+>        - Distane based
+>        - Density Based
 >      - Classification-Based
 >      - Statistical
