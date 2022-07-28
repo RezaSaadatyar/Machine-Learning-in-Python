@@ -1,11 +1,13 @@
 #### Machine Learning in Python
 > **Types of Classification Algorithms:**<br/>
-> - Logistic Regression
->   - This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
+> - Logistic Regression:<br/>
+>  This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
 > - Linear Discriminant Analysis 
+> 
 >-  Decision Tree
 >-  Random Forest
->-  Naive Bayes
+>-  Naive Bayes:<br/>
+>   This algorithm requires a small amount of training data to estimate the necessary parameters. The Naive Bayes classifier is extremely fast compared with more sophisticated methods. In general, Naive Bayes is not a good estimator.
 > $$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$      $$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$    
 >- Gradient Boosting
 >- K-Nearest Neighbor (KNN(D, d, k)):
