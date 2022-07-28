@@ -1,5 +1,7 @@
 #### Machine Learning in Python
-> ***All classifiers in machine learning - step by step***
+> **Classifiation**<br/>***Linera classifiers:***<br/>
+> - Logistic Regression
+> - Linear Discriminant Analysis (LDA)
 >- Decision Tree
 >- Random Forest
 >- Naive Bayes
@@ -11,7 +13,7 @@
 >   3. Assign d the class that is the most frequent class in the majority class
 >   4. Where k is very small, the model is complex and hence we overfit
 >   5. Where k is very large, the model is simple and we underfit
->- Logistic Regression
+
 >- Support Vector Machine (SVM)
 >- AdaBoost
 
