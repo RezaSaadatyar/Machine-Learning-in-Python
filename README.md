@@ -10,7 +10,8 @@
 >   This algorithm requires a small amount of training data to estimate the necessary parameters. The Naive Bayes classifier is extremely fast compared with more sophisticated methods. In general, Naive Bayes is not a good estimator.
 > $$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$      $$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$    
 >- Gradient Boosting
->- K-Nearest Neighbor (KNN(D, d, k)):
+>- K-Nearest Neighbor (KNN(D, d, k)):<br/>
+>  Based on the k nearest neighbours of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.
 >   1. compute the distance between d and every example in D
 >   2. Choose the k example in D that are nearest to d
 >   3. Assign d the class that is the most frequent class in the majority class
