@@ -20,7 +20,7 @@
 >   - 2. TN (True Negative): The number of correct classification of negative examples
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
-> 
+
 > **Dimensionality Reduction:**
 >
 > Feature selection methods:
