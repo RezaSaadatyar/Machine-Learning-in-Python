@@ -15,6 +15,12 @@
 >- AdaBoost<br/> It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones.
 
 
+> **Confusion matrix:**
+>   - 1. TP (True Positive): The number of correct classification of positive examples
+>   - 2. TN (True Negative): The number of correct classification of negative examples
+>   - 3. FP (False Positive): The number of incorrect classification of negative examples
+>   - 4. FN (False Negative): The number of incorrect classification of positive examples
+> 
 > **Dimensionality Reduction:**
 >
 > Feature selection methods:
