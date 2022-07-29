@@ -8,13 +8,18 @@
 >-  Naive Bayes:<br/>
 >   This algorithm requires a small amount of training data to estimate the necessary parameters. The Naive Bayes classifier is extremely fast compared with more sophisticated methods. In general, Naive Bayes is not a good estimator.
 > $$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$      $$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$    
->- Gradient Boosting
 >- K-Nearest Neighbor<br/>
 >  Based on the k nearest neighbours of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.<br/>***KNN(D, d, k):***<br/>1. compute the distance between d and every example in D <br/>2. Choose the k example in D that are nearest to d<br/>3. Assign d the class that is the most frequent class in the majority class<br/>4. Where k is very small, the model is complex and hence we overfit<br/>5. Where k is very large, the model is simple and we underfit
 >- Support Vector Machine<br/> Adaptive to high-dimensional spaces and uses a subset of training points for the decision function, making it memory-efficient too.
->- AdaBoost<br/> It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones.
-
-
+>- AdaBoost<br/> 
+>  It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones
+>     - Boosting algorithm<br/> It is a process that uses a set of machine learning algorithms to combine weak learner to form strong learners in order to increase the accuracy of the model.
+>      - 1. The base algorithm reads the data and assigns equal weight to each sample observation.
+>      - 2. False predictions are assigned to the next base learner with a higher weightage on these incorrect predictions.
+>      - 3. Repeat step 2 until algorithm can correctly classify the output.
+>    - Gradient Boosting method<br/>In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
+>       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
+      
 > **Confusion matrix:**
 >   - 1. TP (True Positive): The number of correct classification of positive examples
 >   - 2. TN (True Negative): The number of correct classification of negative examples
