@@ -1,4 +1,12 @@
 #### Machine Learning in Python
+> ***This repository Covers:***<br/>
+> - 1. A brief about types of classification & clustering algorithms
+> - 2. Preparing the data
+> - 3. Training the model
+> - 4. Prediction and performance check
+> - 5. Iris dataset classification & clustering example
+
+
 > **Types of Classification Algorithms:**<br/>
 > - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
 > - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems.
@@ -73,5 +81,10 @@
 >      - Statistical
 >        - Boxplot method
 >        - Histogram method
->        
->        
+
+
+> ***Install the required packages (if required)***   
+> - pip install numpy
+> - pip install pandas
+> - pip install scikit-learn
+> - pip install matplotlib   
