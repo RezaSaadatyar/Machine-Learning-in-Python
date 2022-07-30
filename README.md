@@ -82,7 +82,6 @@
 >        - Boxplot method
 >        - Histogram method
 
-
 > ***Install the required packages (if required)***   
 > - pip install numpy
 > - pip install pandas
