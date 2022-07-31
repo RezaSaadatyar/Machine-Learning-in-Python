@@ -32,11 +32,13 @@
 >    - Gradient Boosting method<br/>In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
 >       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
       
+      
 > **Confusion matrix:**
 >   - 1. TP (True Positive): The number of correct classification of positive examples
 >   - 2. TN (True Negative): The number of correct classification of negative examples
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
+
 
 > **Dimensionality Reduction:**
 > Feature selection methods:
