@@ -1,15 +1,18 @@
 #### Machine Learning in Python
-> ***This repository Covers:***<br/>
-> - 1. A brief about types of classification & clustering algorithms
-> - 2. Preparing the data
-> - 3. Training the model
-> - 4. Prediction and performance check
-> - 5. Iris dataset classification & clustering example
+>***This repository Covers:***
+>- 1. A brief about types of classification & clustering algorithms
+>- 2. Preparing the data
+>- 3. Training the model
+>- 4. Prediction and performance check
+>- 5. Iris dataset classification & clustering example
 
 
-> **Types of Classification Algorithms:**<br/>
+>**Types of Classification Algorithms:**<br/>
 > - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
-> - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems.
+> - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems.   
+>  - LDA VS PCA:  
+>         * 1. LDA do data classification
+>     
 > 
 >-  Decision Tree<br/>The decision tree can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.
 >-  Random Forest<br/>  It reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.
