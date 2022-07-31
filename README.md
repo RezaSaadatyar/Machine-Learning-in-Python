@@ -39,7 +39,6 @@
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
 > **Dimensionality Reduction:**
-
 > Feature selection methods:
 >   - Filter method: 
 >     - Correleation
