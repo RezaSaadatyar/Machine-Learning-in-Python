@@ -8,7 +8,7 @@
 
 >**Types of Classification Algorithms:**<br/>
 > - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
-> - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. The objective of LDA is to find a line that maximizes the class separation.  
+> - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.
 >    - ***LDA VS PCA:***  
 >        - LDA classifies data vs PCA classifies features
 >        - LDa is a supervised learning technique vs PCA is a unsupervised learning techinque
