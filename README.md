@@ -38,7 +38,6 @@
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
-
 > **Dimensionality Reduction:**
 > Feature selection methods:
 >   - Filter method: 
@@ -85,7 +84,6 @@
 >      - Statistical
 >        - Boxplot method
 >        - Histogram method
-
 
 > ***Install the required packages (if required)***   
 > - pip install numpy
