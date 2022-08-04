@@ -9,11 +9,35 @@
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
+>       - AdaBoost
+>       - Naive Bayes
+>       - Random Forest
+>       - Decision Trees
+>       - K-Nearest Neighbors
+>       - Logistic Regression
+>       - Multilayer perceptron
+>       - Support Vector Machins
+>       - Linear Discriminant Analysis
 >    - Regression
+>       - Lasso Regression
+>       - Ridge Regression
+>       - Linear Regression
+>       - Decision Trees Regression
+>       - Neural Network Regression
+>       - Support Vector Regression
+>       
 >  - Unsupervised Learning
 >     - Clustering
+>       - K-Means
+>       - Mean-shift
+>       - DBSCAN
+>       - Gaussian Mixture
+>       - Agglomerative Hierarchial
 >  - Reinforcement Learning
 >     - Decision Making
+>       - Q-Learning
+>       - R Learning
+>       - TD Learning
 
 >**Types of Classification Algorithms:**<br/>
 > - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
@@ -24,7 +48,7 @@
 >        - LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation
 >        - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions
 >     
->-  Decision Tree<br/>The decision tree can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.
+>-  Decision Trees<br/>The decision tree can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.
 >-  Random Forest<br/>  It reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.
 >-  Naive Bayes:<br/>
 >   This algorithm requires a small amount of training data to estimate the necessary parameters. The Naive Bayes classifier is extremely fast compared with more sophisticated methods. In general, Naive Bayes is not a good estimator.
