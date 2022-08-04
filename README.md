@@ -25,7 +25,6 @@
 >       - Decision Trees Regression
 >       - Neural Network Regression
 >       - Support Vector Regression
->       
 >  - Unsupervised Learning
 >     - Clustering
 >       - K-Means
