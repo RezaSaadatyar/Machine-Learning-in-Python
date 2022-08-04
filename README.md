@@ -5,7 +5,6 @@
 >- 3. Training the model
 >- 4. Prediction and performance check
 >- 5. Iris dataset classification & clustering example
-
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
