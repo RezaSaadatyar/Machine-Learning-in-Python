@@ -92,7 +92,6 @@
 >   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
 >   - Linear Discrimination Analysis (LDA): Maximising the distance between groups 
 
-
 > **Clustering:**<br/>We have a set of unlabeled data point x and we intend to find groups of similar objects (based on observed features)<br/>1. High intra-cluster similarity: cohesive within clusters<br/>2. low intra-cluster similarity: distinctive between clusters<br/>
 > ***The general approach of clustering algorithms:*** 
 >  - 1. Partitional clustering
@@ -119,7 +118,6 @@
 >      - Statistical
 >        - Boxplot method
 >        - Histogram method
-
 > ***Install the required packages (if required)***   
 > - pip install numpy
 > - pip install pandas
