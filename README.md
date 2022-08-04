@@ -33,6 +33,7 @@
 >       - DBSCAN
 >       - Gaussian Mixture
 >       - Agglomerative Hierarchial
+>       - Principal Component Analysis
 >  - Reinforcement Learning
 >     - Decision Making
 >       - Q-Learning
