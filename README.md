@@ -38,6 +38,7 @@
 >       - R Learning
 >       - TD Learning
 
+
 >**Types of Classification Algorithms:**<br/>
 > - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
 > - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.
@@ -45,8 +46,7 @@
 >        - LDA classifies data vs PCA classifies features
 >        - LDa is a supervised learning technique vs PCA is a unsupervised learning techinque
 >        - LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation
->        - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions
->     
+>        - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions 
 >-  Decision Trees<br/>The decision tree can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.
 >-  Random Forest<br/>  It reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.
 >-  Naive Bayes:<br/>
