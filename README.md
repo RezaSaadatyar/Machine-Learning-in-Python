@@ -60,6 +60,7 @@
 >    - Still effective in cases where number of dimensions is greater than the nunmber of samples.
 >    - Uses a subset of training points in the decision function (called support vectors), so it is also memroy efficient.
 >    - Versatile different Kernel functions can be specified for the decision funtion
+>- Radial Basis Function (RBF): 
 >- AdaBoost<br/> 
 >  It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones
 >     - Boosting algorithm<br/> It is a process that uses a set of machine learning algorithms to combine weak learner to form strong learners in order to increase the accuracy of the model.
