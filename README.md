@@ -17,7 +17,8 @@
 >       - Logistic Regression
 >       - Multilayer perceptron
 >       - Support Vector Machins
->       - Linear Discriminant Analysis
+>       - Radial Basis Function (RBF) 
+>       - Linear Discriminant Analysis (LDA)
 >    - Regression
 >       - Lasso Regression
 >       - Ridge Regression
