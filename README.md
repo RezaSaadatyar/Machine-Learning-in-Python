@@ -55,6 +55,11 @@
 >- K-Nearest Neighbor<br/>
 >  Based on the k nearest neighbours of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.<br/>***KNN(D, d, k):***<br/>1. compute the distance between d and every example in D <br/>2. Choose the k example in D that are nearest to d<br/>3. Assign d the class that is the most frequent class in the majority class<br/>4. Where k is very small, the model is complex and hence we overfit<br/>5. Where k is very large, the model is simple and we underfit
 >- Support Vector Machine<br/> Adaptive to high-dimensional spaces and uses a subset of training points for the decision function, making it memory-efficient too.
+   - The advantages of SVM are:
+     - Effective in high dimensional spaces
+     - Still effective in cases where number of dimensions is greater than the nunmber of samples.
+     - Uses a subset of training points in the decision function (called support vectors), so it is also memroy efficient.
+     - Versatile different Kernel functions can be specified for the decision funtion
 >- AdaBoost<br/> 
 >  It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones
 >     - Boosting algorithm<br/> It is a process that uses a set of machine learning algorithms to combine weak learner to form strong learners in order to increase the accuracy of the model.
