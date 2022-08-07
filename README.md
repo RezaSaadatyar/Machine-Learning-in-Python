@@ -108,6 +108,7 @@
 >  - 3. Density-based clustering
 >        - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
 
+
 >**Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
