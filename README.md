@@ -28,9 +28,10 @@
 >       - Support Vector Regression
 >  - Unsupervised Learning
 >     - Clustering
+>       - DBSCAN
 >       - K-Means
 >       - Mean-shift
->       - DBSCAN
+>       - Fuzzy c-means
 >       - Gaussian Mixture
 >       - Agglomerative Hierarchial
 >       - Principal Component Analysis
