@@ -72,7 +72,7 @@
 >    - Gradient Boosting method<br/>In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
 >       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
  
-> **Types of Clustering Algorithms:**
+> **Types of Clustering Algorithms:**<br/>
 >   - Fuzzy c-means
 >     - Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.
  
@@ -111,7 +111,6 @@
 >       - Divisible method
 >  - 3. Density-based clustering
 >        - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
-
 
 >**Types of outliers:**
 > - 1. Global outliers
