@@ -72,7 +72,7 @@
 >    - Gradient Boosting method<br/>In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
 >       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
  
-> **Types of Clustering Algorithms:**<br/>
+> **Types of Clustering Algorithms:**<br/>Typically, In unsupervised algorithms, input vectors are used to make inferences without referring to labelled outcomes.
 >   - Fuzzy c-means
 >     - Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.
  
