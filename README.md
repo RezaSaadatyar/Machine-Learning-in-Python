@@ -73,6 +73,7 @@
 >       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
  
 > **Types of Clustering Algorithms:**<br/>Typically, In unsupervised algorithms, input vectors are used to make inferences without referring to labelled outcomes.
+>   _ K-means: <br/>During data mining, the K-means algorithm starts with a set of randomly selected centroids, which serve as the starting points for every cluster, and then performs iterative (repetitive) calculations to optimize their positions.
 >   - Fuzzy c-means
 >     - Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.
  
