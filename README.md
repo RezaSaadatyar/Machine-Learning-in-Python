@@ -131,6 +131,10 @@
 >        - Histogram method
 > ***Install the required packages (if required)***   
 > - pip install numpy
+>  - pip install scipy
+> 
 > - pip install pandas
 > - pip install scikit-learn
 > - pip install matplotlib   
+> - pip install scipy
+> 
