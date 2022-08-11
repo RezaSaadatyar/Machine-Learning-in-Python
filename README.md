@@ -138,4 +138,4 @@
 > - pip install scikit-learn
 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F68g1WU8AspXU7S0JifzSqM%2FWebsite-Flowchart-Template%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+![Website Flowchart Template](https://user-images.githubusercontent.com/96347878/184237742-e98afce4-0ed6-4e71-8915-89381ba58a3c.png)
