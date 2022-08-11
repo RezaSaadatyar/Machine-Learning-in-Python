@@ -89,7 +89,7 @@
 >     - Correleation
 >     - Mutual Information
 >     - t-test
->     -  Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
+>     - Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
 >   - Warpper method: use cross-validation
 >     - Sequential forward selection (SFS)
 >     - Sequential backward selection (SBS)
