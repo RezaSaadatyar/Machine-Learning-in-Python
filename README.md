@@ -137,5 +137,4 @@
 > - pip install matplotlib   
 > - pip install scikit-learn
 
-
-![Website Flowchart Template](https://user-images.githubusercontent.com/96347878/184286996-f7f51e7e-046d-4daf-9575-f0f2d2af3140.png)
+![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
