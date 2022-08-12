@@ -138,4 +138,4 @@
 > - pip install scikit-learn
 
 
-![Website Flowchart Template](https://user-images.githubusercontent.com/96347878/184237742-e98afce4-0ed6-4e71-8915-89381ba58a3c.png)
+![Website Flowchart Template](https://user-images.githubusercontent.com/96347878/184286996-f7f51e7e-046d-4daf-9575-f0f2d2af3140.png)
