@@ -101,7 +101,7 @@ A machine learning algorithm (such as **clasification, clustering or regression*
 >     - Recursive feature elimination
 >     - Sequential Forward Selection (SFS)
 >     - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
->   - Embedded method
+>   - Embedded method<br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
 >     - Decision tree
 >     - L1- regularized logistic regression
 >     - Random forest feature importance
