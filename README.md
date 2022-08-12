@@ -85,17 +85,22 @@
 
 > **Dimensionality Reduction:**
 > Feature selection methods:
->   - Filter method: 
->     - Correleation
+>   - Filter methods: 
+>     - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
+>     - Pairwise correlation
+>     - Correleation with target
 >     - Mutual Information
 >     - t-test
 >     - Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
 >   - Warpper method: use cross-validation
->     - Sequential forward selection (SFS)
->     - Sequential backward selection (SBS)
->     - Plus-L minus-R selection (LRS) 
+>     - Permutation importance
+>     - Recursive feature elimination
+>     - Sequential Forward Selection (SFS)
+>     - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
 >   - Embedded method
->     - L1 (LASSO) regularization
+>     - Decision tree
+>     - L1- regularized logistic regression
+>     - Random forest feature importance
 >   
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 >
@@ -139,6 +144,7 @@
 > - pip install scikit-learn
 
 > **There are 6 steps to effective data classification:**
+> In short, the steps involved in
 ![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
 > **Step 1:**
 > ```
@@ -162,4 +168,4 @@
  ```
  
  ```
- ![Capture](https://user-images.githubusercontent.com/96347878/184355578-3b1a188d-c4c7-4d0c-a69a-8a64de7a443f.PNG)    ![image](https://user-images.githubusercontent.com/96347878/184385334-6736caa6-c47a-414e-9c56-f6242eddf0e1.png)
+ <img width="6687" alt="pca1" src="https://user-images.githubusercontent.com/96347878/184386205-c1f85c85-c327-4cf5-98b8-d6c860598379.png">
