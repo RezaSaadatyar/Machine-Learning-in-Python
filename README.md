@@ -6,7 +6,7 @@
 >- 4. Prediction and performance check
 >- 5. Iris dataset classification & clustering example<br/>
 
-A machine learning algorithm (such as **clasification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes.Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
+A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
@@ -102,9 +102,9 @@ A machine learning algorithm (such as **clasification, clustering or regression*
 >     - Sequential Forward Selection (SFS)
 >     - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
 >   - Embedded method<br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
->     - Decision tree
+>     - Tree-based feature selection (Random forest)
 >     - L1- regularized logistic regression
->     - Random forest feature importance
+>    
 >   
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 >
