@@ -84,7 +84,10 @@ A machine learning algorithm (such as **clasification, clustering or regression*
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
-> **Dimensionality Reduction:**<br/>
+> **Dimensionality Reduction:**<br/>Feature seletion and dimensionality reduction are important because of three main reasons:
+>   - Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
+>   - Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
+>   -Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time). 
 > Feature selection methods:
 >   - Filter methods: 
 >     - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
