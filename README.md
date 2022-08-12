@@ -151,4 +151,6 @@
 > Labels = Labels.fit_transform(Labels)
 > ```
 > **Step 2:** <br/>In this section, Iris datasets are used, so filtering and normalization are not necessary.<br/>
-> **Step 3:**
+> **Step 3:**<br/>There are two ways to reduce dimensionality:
+> - By only keeping the most relevant variables from the original dataset (this technique is called feature selection)
+> - Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called dimensionality reduction).
