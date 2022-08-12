@@ -162,4 +162,4 @@
  ```
  
  ```
- ![Capture](https://user-images.githubusercontent.com/96347878/184355578-3b1a188d-c4c7-4d0c-a69a-8a64de7a443f.PNG)
+ ![Capture](https://user-images.githubusercontent.com/96347878/184355578-3b1a188d-c4c7-4d0c-a69a-8a64de7a443f.PNG)    ![image](https://user-images.githubusercontent.com/96347878/184385334-6736caa6-c47a-414e-9c56-f6242eddf0e1.png)
