@@ -4,8 +4,9 @@
 >- 2. Preparing the data
 >- 3. Training the model
 >- 4. Prediction and performance check
->- 5. Iris dataset classification & clustering example
+>- 5. Iris dataset classification & clustering example<br/>
 
+A machine learning algorithm (such as **clasification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes.Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
@@ -83,7 +84,7 @@
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
-> **Dimensionality Reduction:**
+> **Dimensionality Reduction:**<br/>
 > Feature selection methods:
 >   - Filter methods: 
 >     - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
