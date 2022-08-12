@@ -132,9 +132,9 @@
 >        
 > ***Install the required packages (if required)***   
 > - pip install numpy
->  - pip install scipy
+> - pip install scipy
 > - pip install pandas
->  - pip install seaborn
+> - pip install seaborn
 > - pip install matplotlib   
 > - pip install scikit-learn
 
@@ -147,10 +147,19 @@
 > Data = iris.data
 > Labels = iris.target
 > or  # Data, Labels = datasets.make_blobs(150, 4, centers=4, random_state=0)   # The make_blobs() function can be used to generate blobs of points with a Gaussian distribution.
-> Labels = preprocessing.LabelEncoder()   # Encode target labels with value between 0 and n_classes-1 (if required).
-> Labels = Labels.fit_transform(Labels)
+> # Labels = preprocessing.LabelEncoder()   # Encode target labels with value between 0 and n_classes-1 (if required).
+> # Labels = Labels.fit_transform(Labels)
 > ```
 > **Step 2:** <br/>In this section, Iris datasets are used, so filtering and normalization are not necessary.<br/>
+> ```
+> # ===================================== Step 2: Filtering & Data scaling =============================================
+> # Data = filtering(Data, F_low=5, F_high=10, Order=3, Fs=50, btype='bandpass')      # btype:'low', 'high', 'bandpass', 'bandstop'
+> # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
+> ```
 > **Step 3:**<br/>There are two ways to reduce dimensionality:
 > - By only keeping the most relevant variables from the original dataset (this technique is called feature selection)
 > - Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called dimensionality reduction).
+ ```
+ 
+ ```
+ ![Capture](https://user-images.githubusercontent.com/96347878/184355578-3b1a188d-c4c7-4d0c-a69a-8a64de7a443f.PNG)
