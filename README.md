@@ -141,7 +141,14 @@
 > **There are 6 steps to effective data classification:**
 ![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
 > **Step 1:**
-> '''
+> ```
 > from sklearn import datasets
 > iris = datasets.load_iris()
-> '''
+> Data = iris.data
+> Labels = iris.target
+> or  # Data, Labels = datasets.make_blobs(150, 4, centers=4, random_state=0)   # The make_blobs() function can be used to generate blobs of points with a Gaussian distribution.
+> Labels = preprocessing.LabelEncoder()   # Encode target labels with value between 0 and n_classes-1 (if required).
+> Labels = Labels.fit_transform(Labels)
+> ```
+> **Step 2:** <br/>In this section, Iris datasets are used, so filtering and normalization are not necessary.<br/>
+> **Step 3:**
