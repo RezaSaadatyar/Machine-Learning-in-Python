@@ -170,6 +170,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > - By only keeping the most relevant variables from the original dataset (this technique is called feature selection)
 > - Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called dimensionality reduction).
  ```
- 
+ # Data = feature_extraction(Data, Labels, Number_Feature_PCA=3, Type_feature='ICA')     # Feature Extraction  ype_feature=LDA, PCA, ICA
+ Data = featureselection(Data, Labels, Number_Feature=3, C_L1FS=0.01, N_estimators_TFS=100,  Type_feature='RFECV')
  ```
  <img width="6687" alt="pca1" src="https://user-images.githubusercontent.com/96347878/184386205-c1f85c85-c327-4cf5-98b8-d6c860598379.png">
