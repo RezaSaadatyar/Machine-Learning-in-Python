@@ -91,7 +91,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time).
 >   
 > ***Feature selection methods:***<br/>
->   - ***Filter methods:*** Uses proxy measure
+> - ***Filter methods:***
 >      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
 >        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
 >        - Fisher score
@@ -101,15 +101,21 @@ A machine learning algorithm (such as **classification, clustering or regression
 >        - t-test
 >     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
 >        - Pearson correlation
->  - ***Warpper method:*** Uses predicitve model
+>  - ***Warpper method:*** 
 >       - Permutation importance
->        - Recursive feature elimination
->        - Sequential Forward Selection (SFS)
->        - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
->   - ***Embedded method:*** Select features during model building<br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
+>       - Recursive feature elimination
+>       - Sequential Forward Selection (SFS)
+>       - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
+>   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
 >     - Tree-based feature selection (Random forest)
 >     - L1- regularized logistic regression
 >    
+>| Filter method | Wrapper method | Embedded method|
+>| --------------- | -------------- |----------------|
+>|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
+>|Computationally faster |Slower |Medium  |
+>|Avoids overfitting |Prone to overfitting|Less Prone to overfitting|
+>|Sometimes may fail to select best features |Better| Good performance|
 
 
 >     - Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
