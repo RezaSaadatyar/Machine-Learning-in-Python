@@ -7,6 +7,9 @@
 >- 5. Iris dataset classification & clustering example<br/>
 
 A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
+
+**Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
+
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
