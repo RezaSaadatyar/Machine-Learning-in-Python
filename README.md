@@ -125,7 +125,6 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
-
 > 
 >    
 >| Filter method | Wrapper method | Embedded method|
