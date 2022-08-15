@@ -6,9 +6,50 @@
 >- 4. Prediction and performance check
 >- 5. Iris dataset classification & clustering example<br/>
 
+**Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
+
 A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 
-**Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
+
+> **Dimensionality Reduction:**<br/>Feature seletion and dimensionality reduction are important because of three main reasons:
+>   - Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
+>   - Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
+>   - Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
+>
+>**Feature extraction:**<br/>
+>   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
+>   - Linear Discrimination Analysis (LDA): Maximising the distance between groups
+>   - Independent component analysis (ICA)
+>   - Singular value decomposition (SVD)
+>   - T-distributed stochastic neighbor embedding (TDSNE) 
+>   - Factor analysis (FA) 
+>   - Isometric Feature Mapping (Isomap)
+
+
+> ***Feature selection methods:***<br/>
+> - ***Filter methods:***
+>      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
+>        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
+>        - Fisher score
+>        - Pairwise correlation
+>        - Correleation with target
+>        - Mutual Information
+>        - t-test
+>     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
+>        - Pearson correlation
+>  - ***Warpper method:*** 
+>       - Permutation importance
+>       - Recursive feature elimination
+>       - Sequential Forward Selection (SFS)
+>       - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
+>   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
+>     - Stochastic neighbour embedding (T-SNE)<br/>T-SNE is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.
+>     - Tree-based feature selection (Random forest)
+>     - L1- regularized logistic regression
+
+
+
+
 
 >**Types of Machine Learning:**
 >  - Supervised Learning
@@ -88,31 +129,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
 
-> **Dimensionality Reduction:**<br/>Feature seletion and dimensionality reduction are important because of three main reasons:
->   - Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
->   - Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
->   - Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time).
->   
-> ***Feature selection methods:***<br/>
-> - ***Filter methods:***
->      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
->        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
->        - Fisher score
->        - Pairwise correlation
->        - Correleation with target
->        - Mutual Information
->        - t-test
->     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
->        - Pearson correlation
->  - ***Warpper method:*** 
->       - Permutation importance
->       - Recursive feature elimination
->       - Sequential Forward Selection (SFS)
->       - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
->   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
->     - Stochastic neighbour embedding (T-SNE)<br/>T-SNE is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.
->     - Tree-based feature selection (Random forest)
->     - L1- regularized logistic regression
+> 
 >    
 >| Filter method | Wrapper method | Embedded method|
 >| --------------- | -------------- |----------------|
@@ -127,9 +144,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   
 > Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 >
-> Feature extraction:<br/>
->   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
->   - Linear Discrimination Analysis (LDA): Maximising the distance between groups 
+ 
 
 > **Clustering:**<br/>We have a set of unlabeled data point x and we intend to find groups of similar objects (based on observed features)<br/>1. High intra-cluster similarity: cohesive within clusters<br/>2. low intra-cluster similarity: distinctive between clusters<br/>
 > ***The general approach of clustering algorithms:*** 
