@@ -21,9 +21,9 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - Linear Discrimination Analysis (LDA): Maximising the distance between groups
 >   - Independent component analysis (ICA)
 >   - Singular value decomposition (SVD)
->   - T-distributed stochastic neighbor embedding (TDSNE) 
 >   - Factor analysis (FA) 
 >   - Isometric Feature Mapping (Isomap)
+>   - T-distributed stochastic neighbor embedding (TDSNE)<br/>T-SNE is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data. 
 >
 > **Feature selection methods:**<br/>
 > - ***Filter methods:***
@@ -35,17 +35,21 @@ A machine learning algorithm (such as **classification, clustering or regression
 >     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
 >        - Pearson correlation
 >  - ***Warpper method:*** 
->       - Permutation importance
->       - Recursive feature elimination
->       - Sequential Forward Selection (SFS)
->       - Sequential Backward Selection (SBS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
+>       - Forward feature selection (FFS)
+>       - Exhaustive Feature Selection (EFS)
+>       - Recursive feature elimination (RFE)
+>       - Backward feature selection (BFS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
 >   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
->     - Stochastic neighbour embedding (T-SNE)<br/>T-SNE is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.
->     - Tree-based feature selection (Random forest)
->     - L1- regularized logistic regression
-
-
-
+>     - Random forest (RF)
+>     - Tree-based feature selection (TFS)
+>     - L1- regularized logistic regression 
+>    
+>| Filter method | Wrapper method | Embedded method|
+>| --------------- | -------------- |----------------|
+>|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
+>|Computationally faster |Slower |Medium  |
+>|Avoids overfitting |Prone to overfitting|Less Prone to overfitting|
+>|Sometimes may fail to select best features |Better| Good performance|
 
 
 >**Types of Machine Learning:**
@@ -125,22 +129,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
-> 
->    
->| Filter method | Wrapper method | Embedded method|
->| --------------- | -------------- |----------------|
->|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
->|Computationally faster |Slower |Medium  |
->|Avoids overfitting |Prone to overfitting|Less Prone to overfitting|
->|Sometimes may fail to select best features |Better| Good performance|
-
-
->     - Univariate feature selestion: It works by selecting the best features based on univariate statistical tests. It can be seen as a preprocessing step to an estimator.
->   -
->   
-> Filter methods use statistical methods for evaluation of a subset of features while warpper methods use cross validation.
 >
- 
 
 > **Clustering:**<br/>We have a set of unlabeled data point x and we intend to find groups of similar objects (based on observed features)<br/>1. High intra-cluster similarity: cohesive within clusters<br/>2. low intra-cluster similarity: distinctive between clusters<br/>
 > ***The general approach of clustering algorithms:*** 
