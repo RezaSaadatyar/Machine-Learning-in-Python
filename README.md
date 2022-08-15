@@ -24,9 +24,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - T-distributed stochastic neighbor embedding (TDSNE) 
 >   - Factor analysis (FA) 
 >   - Isometric Feature Mapping (Isomap)
-
-
-> ***Feature selection methods:***<br/>
+>
+> **Feature selection methods:**<br/>
 > - ***Filter methods:***
 >      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
 >        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
