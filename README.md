@@ -29,11 +29,9 @@ A machine learning algorithm (such as **classification, clustering or regression
 > - ***Filter methods:***
 >      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
 >        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
->        - Fisher score
->        - Pairwise correlation
->        - Correleation with target
->        - Mutual Information
->        - t-test
+>        - Mutual information (MI)
+>        - Chi-square test (Chi-square)
+>        -  fisher_score (FS)
 >     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
 >        - Pearson correlation
 >  - ***Warpper method:*** 
