@@ -27,12 +27,12 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   
 > **Feature selection methods:**<br/>
 > - ***Filter methods:***
->      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
->        - Variance threshold:<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
+>      - Univariate
+>        - Variance threshold (VT)
 >        - Mutual information (MI)
 >        - Chi-square test (Chi-square)
 >        -  fisher_score (FS)
->     - Multi-variate: Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.
+>     - Multi-variate
 >        - Pearson correlation
 >  - ***Warpper method:*** 
 >       - Forward feature selection (FFS)
@@ -46,8 +46,11 @@ A machine learning algorithm (such as **classification, clustering or regression
 >     
 >**Further information:**<br/> 
 > ***PCA:*** It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).<br/>
-> ***LDA:*** Maximising the distance between groups.
-> ***TDSNE:*** It is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data. 
+> ***LDA:*** Maximising the distance between groups.<br/>
+> ***TDSNE:*** It is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.<br/> 
+> ***Univariate:*** The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.<br/>
+> ***VT:***:<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account.<br/>
+> ***Multi-variate:*** Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account
 
 
 
