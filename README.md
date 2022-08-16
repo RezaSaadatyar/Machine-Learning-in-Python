@@ -28,7 +28,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > **Feature selection methods:**<br/>
 > - ***Filter methods:***
 >      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
->        - Variance threshold<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
+>        - Variance threshold:<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account
 >        - Mutual information (MI)
 >        - Chi-square test (Chi-square)
 >        -  fisher_score (FS)
@@ -38,7 +38,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Forward feature selection (FFS)
 >       - Exhaustive Feature Selection (EFS)
 >       - Recursive feature elimination (RFE)
->       - Backward feature selection (BFS)<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
+>       - Backward feature selection (BFS):<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
 >   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
 >     - Random forest (RF)
 >     - Tree-based feature selection (TFS)
@@ -131,7 +131,6 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
 
->
 
 > **Clustering:**<br/>We have a set of unlabeled data point x and we intend to find groups of similar objects (based on observed features)<br/>1. High intra-cluster similarity: cohesive within clusters<br/>2. low intra-cluster similarity: distinctive between clusters<br/>
 > ***The general approach of clustering algorithms:*** 
