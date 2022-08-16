@@ -23,8 +23,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - Singular value decomposition (SVD)
 >   - Factor analysis (FA) 
 >   - Isometric Feature Mapping (Isomap)
->   - T-distributed stochastic neighbor embedding (TDSNE)<br/>T-SNE is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data. 
->
+>   - T-distributed stochastic neighbor embedding (TDSNE)
+>   
 > **Feature selection methods:**<br/>
 > - ***Filter methods:***
 >      - Univariate: The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.
