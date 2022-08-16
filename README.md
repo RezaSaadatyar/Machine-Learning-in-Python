@@ -17,8 +17,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
 >
 >**Feature extraction:**<br/>
->   - Principal Component Analysis (PCA): It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).
->   - Linear Discrimination Analysis (LDA): Maximising the distance between groups
+>   - Principal Component Analysis (PCA) 
+>   - Linear Discrimination Analysis (LDA)
 >   - Independent component analysis (ICA)
 >   - Singular value decomposition (SVD)
 >   - Factor analysis (FA) 
@@ -43,7 +43,16 @@ A machine learning algorithm (such as **classification, clustering or regression
 >     - Random forest (RF)
 >     - Tree-based feature selection (TFS)
 >     - L1- regularized logistic regression 
->    
+>     
+>**Further information:**<br/> 
+> ***PCA:*** It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).<br/>
+> ***LDA:*** Maximising the distance between groups.
+> ***TDSNE:*** It is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data. 
+
+
+
+
+
 >| Filter method | Wrapper method | Embedded method|
 >| --------------- | -------------- |----------------|
 >|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
