@@ -12,9 +12,9 @@ A machine learning algorithm (such as **classification, clustering or regression
 
 
 > **Dimensionality Reduction:**<br/>Feature seletion and dimensionality reduction are important because of three main reasons:
->   - Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
->   - Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
->   - Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
+>  1. Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
+>  2. Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
+>  3. Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
 >
 >**Feature extraction:**<br/>
 >   - Principal Component Analysis (PCA) 
@@ -38,8 +38,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Forward feature selection (FFS)
 >       - Exhaustive Feature Selection (EFS)
 >       - Recursive feature elimination (RFE)
->       - Backward feature selection (BFS):<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
->   - ***Embedded method:*** <br/>The embedded method solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting. 
+>       - Backward feature selection (BFS) 
+>   - ***Embedded method:*** 
 >     - Random forest (RF)
 >     - Tree-based feature selection (TFS)
 >     - L1- regularized logistic regression 
@@ -49,8 +49,10 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ***LDA:*** Maximising the distance between groups.<br/>
 > ***TDSNE:*** It is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.<br/> 
 > ***Univariate:*** The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.<br/>
-> ***VT:***:<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account.<br/>
-> ***Multi-variate:*** Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account
+> ***VT:***<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account.<br/>
+> ***Multi-variate:*** Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.<br/>
+> ***BFS:***<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
+> ***The embedded method*** solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting.
 
 
 
