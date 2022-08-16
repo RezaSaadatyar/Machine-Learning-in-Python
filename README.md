@@ -52,6 +52,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >|Sometimes may fail to select best features |Better| Good performance|
 
 
+
+
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
