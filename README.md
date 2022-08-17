@@ -1,6 +1,6 @@
 
 
->
+>***Training**                                                                   **Test**
 >| Method | Accuracy | precision|recall|f1-score|AUC|
 >| ------ | ----- |-------|----- |-------|-------|
 >| LR  | 0.97 |  0.98 | 0.97 |  0.97 |0.99|
