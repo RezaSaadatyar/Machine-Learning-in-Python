@@ -99,36 +99,20 @@ A machine learning algorithm (such as **classification, clustering or regression
 >**Further information:**<br/>
 >***LR*** is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values.<br/>
 >***LDA*** is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.<br/>
->***LDA VS PCA:***  
->     - LDA classifies data vs PCA classifies features.
->     - LDa is a supervised learning technique vs PCA is a unsupervised learning techinque.
->     - LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation.
->     - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions.<br/> 
+>***LDA VS PCA:*** <br/>1. LDA classifies data vs PCA classifies features.<br/>2. LDa is a supervised learning technique vs PCA is a unsupervised learning techinque.<br/>3. LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation.<br/>4. LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions.<br/> 
 >***DT*** can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.<br/>
 >***RF*** reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.<br/>
 >***NB*** requires a small amount of training data to estimate the necessary parameters. The NB classifier is extremely fast compared with more sophisticated methods. In general, NB is not a good estimator.<br/>
 > $$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$      $$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$    
 >***KNN:*** Based on the kNN of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.<br/>***KNN(D, d, k):***<br/>1. compute the distance between d and every example in D. <br/>2. Choose the k example in D that are nearest to d.<br/>3. Assign d the class that is the most frequent class in the majority class.<br/>4. Where k is very small, the model is complex and hence we overfit.<br/>5. Where k is very large, the model is simple and we underfit.<br/>
->***SVM***<br/> Adaptive to high-dimensional spaces and uses a subset of training points for the decision function, making it memory-efficient too.<br/>
->  ***The advantages of SVM are:***
->    - Effective in high dimensional spaces
->    - Still effective in cases where number of dimensions is greater than the nunmber of samples.
->    - Uses a subset of training points in the decision function (called support vectors), so it is also memroy efficient.
->    - Versatile different Kernel functions can be specified for the decision funtion
->- Radial Basis Function (RBF):<br/> RBF networks are similar to two-layer networks. There is a hidden layer that is completely connected to an input. Then, we take the output of the hidden layer perform a weighted sum to get our output.
->- AdaBoost<br/> 
->  It is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones
->     - Boosting algorithm<br/> It is a process that uses a set of machine learning algorithms to combine weak learner to form strong learners in order to increase the accuracy of the model.
->      - 1. The base algorithm reads the data and assigns equal weight to each sample observation.
->      - 2. False predictions are assigned to the next base learner with a higher weightage on these incorrect predictions.
->      - 3. Repeat step 2 until algorithm can correctly classify the output.
->    - Gradient Boosting method<br/>In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
->       - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.
- 
-> **Types of Clustering Algorithms:**<br/>Typically, In unsupervised algorithms, input vectors are used to make inferences without referring to labelled outcomes.
->   - K-means: <br/>During data mining, the K-means algorithm starts with a set of randomly selected centroids, which serve as the starting points for every cluster, and then performs iterative (repetitive) calculations to optimize their positions.
->   - Fuzzy c-means
->     - Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.
+>***The advantages of SVM are:***<br/>1. Effective in high dimensional spaces.<br/>2. Still effective in cases where number of dimensions is greater than the nunmber of samples.<br/>3. Uses a subset of training points in the decision function (called support vectors), so it is also memroy efficient.<br/>4. Versatile different Kernel functions can be specified for the decision funtion.<br/>
+>***RBF*** networks are similar to two-layer networks. There is a hidden layer that is completely connected to an input. Then, we take the output of the hidden layer perform a weighted sum to get our output.<br/>
+>***AdaBoost*** is an ensemble learning method created to improve binary classifier efficiency. AdaBoost uses an iterative approach to learn from the mistakes of weak classifiers, and turn them into strong ones.<br/>
+>  - Boosting algorithm is a process that uses a set of machine learning algorithms to combine weak learner to form strong learners in order to increase the accuracy of the model.<br/>1. The base algorithm reads the data and assigns equal weight to each sample observation.<br/>2. False predictions are assigned to the next base learner with a higher weightage on these incorrect predictions.<br/>3. Repeat step 2 until algorithm can correctly classify the output.<br/> In Gradient Boosting, base learner are generated sequentially in such a way that the present base learner is always more effective than the previous one.
+>    - ***XGboost*** is an advanced version of Gradient Boosting method that is designed to focus on computational speed and model efficiency.<br/>
+>    
+>***K-means:*** During data mining, the K-means algorithm starts with a set of randomly selected centroids, which serve as the starting points for every cluster, and then performs iterative (repetitive) calculations to optimize their positions.<br/>
+>***FCM:*** Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.<br/>
  
 > **Confusion matrix:**
 >   - 1. TP (True Positive): The number of correct classification of positive examples
