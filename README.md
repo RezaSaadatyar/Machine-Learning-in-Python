@@ -1,3 +1,23 @@
+
+
+>
+>| Method | Accuracy | precision|recall|f1-score|AUC|
+>| ------ | ----- |-------|----- |-------|-------|
+>| LR  | 0.97 |  0.98 | 0.97 |  0.97 |0.99|
+>|**RF**|**1**|**1**|**1**|**1**|**1**|
+>| DT |  0.97|  0.97 |  0.97| 0.97  | 0.99|
+>| NB|  0.96|  0.96 | 0.96 | 0.96  | 0.99|
+>| MLP | 0.98 | 0.98  |  0.98|   0.98|0.99 |
+>| SVM | 0.98 | 0.98  |  0.98|   0.98|0.99 |
+>| KNN |  1| 1  | 1 | 1  | 0.99|
+>| LDA|  0.98| 0.97  | 0.97 |  0.97 |0.99 |
+>| AdaBoost |  0.97| 0.97  | 0.97 | 0.97  |0.99 |
+>| XGBoost | 1 |  1 | 1 | 1  | 0.99|
+>
+>|  |  |   |  |   | |
+
+
+
 ####   Machine Learning in Python
 >***This repository Covers:***
 >- 1. A brief about types of classification & clustering algorithms
@@ -193,4 +213,10 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185249806-410e2bd9-643c-4334-9cb2-63d6d2ded658.png)
 > ***Feature selection:***
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
-
+>**Step 4:**
+>```
+>```
+>| Method | Accuracy | precision|recall|f1-score|
+>| --------------- | -------------- |----------------|
+>|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
+>|Computationally faster |Slower |Medium  |
