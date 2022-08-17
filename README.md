@@ -11,10 +11,9 @@
 A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 
 
-> **Dimensionality Reduction:**<br/>Feature seletion and dimensionality reduction are important because of three main reasons:
->  1. Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).
->  2. Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.
->  3. Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
+> **Dimensionality Reduction:**<br/>***Feature seletion and dimensionality reduction are important because of three main reasons:***<br/>1. Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).<br/>2. Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.<br/> 3. Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
+>
+>***There are two ways to reduce dimensionality:***<br/>1. By only keeping the most relevant variables from the original dataset (this technique is called ***feature selection***).<br/>2. Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called ***dimensionality reduction***).<br/>
 >
 >**Feature extraction:**<br/>
 >   - Principal Component Analysis (PCA) 
@@ -52,12 +51,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ***VT:***<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account.<br/>
 > ***Multi-variate:*** Multivariate filter methods are capable of removing redundant feature form the data since they take the mutual relationship between the features into account.<br/>
 > ***BFS:***<br/> 1. Choose a significances level (e.g., SL = 0.05 with a 95% confidence)<br/>2. Fit a full model including all the features<br/> 3. Consider the features with the highrst p-value. if the p-value > significance level the go to step 4, ptherwise terminate the process.<br/> 4. Remove the feature which is under consideration.<br/> 5. Fit a model without this feature. Repeat the entire process from step 3.  
-> ***The embedded method*** solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>They take into consideration the interaction of features like wrapper methods do.<br/>They are faster like filter methods.<br/>They are more accurate than methods.<br/>They find the feature subset for the algorithm being trained.<br/>They are much less prone to overfitting.
-
-
-
-
-
+> ***The embedded method*** solves both issues we encountered with the filterand wrapper methods by combining their advantages.<br/>1. They take into consideration the interaction of features like wrapper methods do.<br/>2. They are faster like filter methods.<br/>3. They are more accurate than methods.<br/>4. They find the feature subset for the algorithm being trained.<br/>5. They are much less prone to overfitting.
+>
 >| Filter method | Wrapper method | Embedded method|
 >| --------------- | -------------- |----------------|
 >|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
@@ -66,19 +61,17 @@ A machine learning algorithm (such as **classification, clustering or regression
 >|Sometimes may fail to select best features |Better| Good performance|
 
 
-
-
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
 >       - AdaBoost
->       - Naive Bayes
->       - Random Forest
->       - Decision Trees
->       - K-Nearest Neighbors
->       - Logistic Regression
->       - Multilayer perceptron
->       - Support Vector Machins
+>       - Naive Bayes (NB)
+>       - Random Forest (RF)
+>       - Decision Trees (DT)
+>       - K-Nearest Neighbors (KNN)
+>       - Logistic Regression (LR)
+>       - Multilayer perceptron (MLP)
+>       - Support Vector Machins (SVM)
 >       - Radial Basis Function (RBF) 
 >       - Linear Discriminant Analysis (LDA)
 >    - Regression
@@ -93,32 +86,30 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - DBSCAN
 >       - K-Means
 >       - Mean-shift
->       - Fuzzy c-means
->       - Gaussian Mixture
->       - Agglomerative Hierarchial
->       - Principal Component Analysis
+>       - Fuzzy c-means (FCM)
+>       - Gaussian Mixture (GM)
+>       - Agglomerative Hierarchial (AH)
+>       - Principal Component Analysis (PCA)
 >  - Reinforcement Learning
 >     - Decision Making
 >       - Q-Learning
 >       - R Learning
 >       - TD Learning
-
->**Types of Classification Algorithms:**<br/>
-> - Logistic Regression:<br/>This method is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values
-> - Linear Discriminant Analysis<br/> LDA is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.
->    - ***LDA VS PCA:***  
->        - LDA classifies data vs PCA classifies features
->        - LDa is a supervised learning technique vs PCA is a unsupervised learning techinque
->        - LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation
->        - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions 
->-  Decision Trees<br/>The decision tree can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.
->-  Random Forest<br/>  It reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.
->-  Naive Bayes:<br/>
->   This algorithm requires a small amount of training data to estimate the necessary parameters. The Naive Bayes classifier is extremely fast compared with more sophisticated methods. In general, Naive Bayes is not a good estimator.
+>
+>**Further information:**<br/>
+>***LR*** is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values.<br/>
+>***LDA*** is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.<br/>
+>***LDA VS PCA:***  
+>     - LDA classifies data vs PCA classifies features.
+>     - LDa is a supervised learning technique vs PCA is a unsupervised learning techinque.
+>     - LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation.
+>     - LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions.<br/> 
+>***DT*** can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.<br/>
+>***RF*** reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.<br/>
+>***NB*** requires a small amount of training data to estimate the necessary parameters. The NB classifier is extremely fast compared with more sophisticated methods. In general, NB is not a good estimator.<br/>
 > $$P(Class_j | x) = {P(x | Class_j)*P(Class_j)\over P(x)}$$      $$P(x | Class_j) = P(X_1 | Class_j) * P(X_2 | Class_j) * ... * P(X_k | Class_j)$$    
->- K-Nearest Neighbor<br/>
->  Based on the k nearest neighbours of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.<br/>***KNN(D, d, k):***<br/>1. compute the distance between d and every example in D <br/>2. Choose the k example in D that are nearest to d<br/>3. Assign d the class that is the most frequent class in the majority class<br/>4. Where k is very small, the model is complex and hence we overfit<br/>5. Where k is very large, the model is simple and we underfit
->- Support Vector Machine<br/> Adaptive to high-dimensional spaces and uses a subset of training points for the decision function, making it memory-efficient too.<br/>
+>***KNN:*** Based on the kNN of each point, classification is calculated. In addition to being simple to implement, this algorithm is robust to noisy training data and effective with large training data sets. As it needs to compute the distance between each instance and all the training samples, the computation cost is high.<br/>***KNN(D, d, k):***<br/>1. compute the distance between d and every example in D. <br/>2. Choose the k example in D that are nearest to d.<br/>3. Assign d the class that is the most frequent class in the majority class.<br/>4. Where k is very small, the model is complex and hence we overfit.<br/>5. Where k is very large, the model is simple and we underfit.<br/>
+>***SVM***<br/> Adaptive to high-dimensional spaces and uses a subset of training points for the decision function, making it memory-efficient too.<br/>
 >  ***The advantages of SVM are:***
 >    - Effective in high dimensional spaces
 >    - Still effective in cases where number of dimensions is greater than the nunmber of samples.
@@ -200,9 +191,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > # Data = filtering(Data, F_low=5, F_high=10, Order=3, Fs=50, btype='bandpass')      # btype:'low', 'high', 'bandpass', 'bandstop'
 > # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
 > ```
-> **Step 3:**<br/>There are two ways to reduce dimensionality:
-> - By only keeping the most relevant variables from the original dataset (this technique is called feature selection)
-> - Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called dimensionality reduction).
+> **Step 3:**
  ```
  # Data = feature_extraction(Data, Labels, Number_Feature_PCA=3, Type_feature='ICA')     # Feature Extraction  ype_feature=LDA, PCA, ICA
  Data = featureselection(Data, Labels, Number_Feature=3, C_L1FS=0.01, N_estimators_TFS=100,  Type_feature='RFECV')
