@@ -190,7 +190,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >Univariate feature selection (UFS); L1-based feature selection (L1FS), Tree-based feature selection (TFS)
 >"""
 > ```
-
-<img width="16384" alt="Untitled (1)" src="https://user-images.githubusercontent.com/96347878/185039350-34615680-0a42-4514-90a2-0b3312566458.png">
+>***Feature extraction:***
+><img width="16384" alt="Untitled (1)" src="https://user-images.githubusercontent.com/96347878/185039350-34615680-0a42-4514-90a2-0b3312566458.png">
 
 
