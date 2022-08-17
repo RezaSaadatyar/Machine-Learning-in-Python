@@ -177,7 +177,19 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ```
 > **Step 3:**
  ```
- # Data = feature_extraction(Data, Labels, Number_Feature_PCA=3, Type_feature='ICA')     # Feature Extraction  ype_feature=LDA, PCA, ICA
- Data = featureselection(Data, Labels, Number_Feature=3, C_L1FS=0.01, N_estimators_TFS=100,  Type_feature='RFECV')
+ # ==================================== Step 3: Feature Extraction & Selection ========================================
+# Data = feature_extraction(Data, Labels, number_feature=3, number_neighbors=70, type_feature='PCA')
+# Data = featureselection(Data, Labels, threshold=0.1, number_feature=3, c_l1fs=0.01, n_estimators_tfs=100,  type_feature='TFS')
+"""
+Feature Extraction:
+PCA:Principal Component Analysis; LDA:Linear discriminant analysis; ICA: Independent component analysis; SVD: Singular value decomposition
+TSNE:T-distributed stochastic neighbor embedding; FA: Factor analysis; Isomap: Isometric Feature Mapping
+Feature Selection:
+Variance; Mutual information (MI); Chi-square test (Chi-square); fisher_score (FS); Forward feature selection (FFS);
+Backward feature selection (BFS); Exhaustive Feature Selection (EFS); Recursive feature elimination (RFE); Random Forest (RF)
+Univariate feature selection (UFS); L1-based feature selection (L1FS), Tree-based feature selection (TFS)
+"""
  ```
- <img width="6687" alt="pca1" src="https://user-images.githubusercontent.com/96347878/184386205-c1f85c85-c327-4cf5-98b8-d6c860598379.png">
+<img width="16384" alt="Untitled (1)" src="https://user-images.githubusercontent.com/96347878/185039350-34615680-0a42-4514-90a2-0b3312566458.png">
+
+
