@@ -176,20 +176,21 @@ A machine learning algorithm (such as **classification, clustering or regression
 > # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
 > ```
 > **Step 3:**
- ```
- # ==================================== Step 3: Feature Extraction & Selection ========================================
-# Data = feature_extraction(Data, Labels, number_feature=3, number_neighbors=70, type_feature='PCA')
-# Data = featureselection(Data, Labels, threshold=0.1, number_feature=3, c_l1fs=0.01, n_estimators_tfs=100,  type_feature='TFS')
-"""
-Feature Extraction:
-PCA:Principal Component Analysis; LDA:Linear discriminant analysis; ICA: Independent component analysis; SVD: Singular value decomposition
-TSNE:T-distributed stochastic neighbor embedding; FA: Factor analysis; Isomap: Isometric Feature Mapping
-Feature Selection:
-Variance; Mutual information (MI); Chi-square test (Chi-square); fisher_score (FS); Forward feature selection (FFS);
-Backward feature selection (BFS); Exhaustive Feature Selection (EFS); Recursive feature elimination (RFE); Random Forest (RF)
-Univariate feature selection (UFS); L1-based feature selection (L1FS), Tree-based feature selection (TFS)
-"""
- ```
+> ```
+> # ==================================== Step 3: Feature Extraction & Selection ========================================
+> # Data = feature_extraction(Data, Labels, number_feature=3, number_neighbors=70, type_feature='PCA')
+> # Data = featureselection(Data, Labels, threshold=0.1, number_feature=3, c_l1fs=0.01, n_estimators_tfs=100,  type_feature='TFS')
+>"""
+>Feature Extraction:
+>PCA:Principal Component Analysis; LDA:Linear discriminant analysis; ICA: Independent component analysis; SVD: Singular value decomposition
+>TSNE:T-distributed stochastic neighbor embedding; FA: Factor analysis; Isomap: Isometric Feature Mapping
+>Feature Selection:
+>Variance; Mutual information (MI); Chi-square test (Chi-square); fisher_score (FS); Forward feature selection (FFS);
+>Backward feature selection (BFS); Exhaustive Feature Selection (EFS); Recursive feature elimination (RFE); Random Forest (RF)
+>Univariate feature selection (UFS); L1-based feature selection (L1FS), Tree-based feature selection (TFS)
+>"""
+> ```
+
 <img width="16384" alt="Untitled (1)" src="https://user-images.githubusercontent.com/96347878/185039350-34615680-0a42-4514-90a2-0b3312566458.png">
 
 
