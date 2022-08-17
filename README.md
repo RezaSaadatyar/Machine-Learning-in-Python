@@ -190,7 +190,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >"""
 > ```
 >***Feature extraction:***
-> ![Untitled-min](https://user-images.githubusercontent.com/96347878/185230181-a7c1220a-eedf-4f62-b969-7cd8e60c86fa.jpg)
+> ![combine_images](https://user-images.githubusercontent.com/96347878/185249806-410e2bd9-643c-4334-9cb2-63d6d2ded658.png)
 > ***Feature selection:***
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
 
