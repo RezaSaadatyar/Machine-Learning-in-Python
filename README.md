@@ -175,7 +175,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > # Data = filtering(Data, F_low=5, F_high=10, Order=3, Fs=50, btype='bandpass')      # btype:'low', 'high', 'bandpass', 'bandstop'
 > # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
 > ```
-> **Step 3:**
+> **Step 3:** Depending on your goals, you can activate function feature_extraction or featureselection
 > ```
 > # ==================================== Step 3: Feature Extraction & Selection ========================================
 > # Data = feature_extraction(Data, Labels, number_feature=3, number_neighbors=70, type_feature='PCA')
