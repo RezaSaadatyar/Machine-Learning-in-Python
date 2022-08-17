@@ -157,7 +157,6 @@ A machine learning algorithm (such as **classification, clustering or regression
 > - pip install scikit-learn
 
 > **There are 6 steps to effective data classification:**
-> In short, the steps involved in
 ![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
 > **Step 1:**
 > ```
