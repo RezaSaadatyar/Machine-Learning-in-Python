@@ -119,18 +119,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >   - 2. TN (True Negative): The number of correct classification of negative examples
 >   - 3. FP (False Positive): The number of incorrect classification of negative examples
 >   - 4. FN (False Negative): The number of incorrect classification of positive examples
-
-
-> **Clustering:**<br/>We have a set of unlabeled data point x and we intend to find groups of similar objects (based on observed features)<br/>1. High intra-cluster similarity: cohesive within clusters<br/>2. low intra-cluster similarity: distinctive between clusters<br/>
-> ***The general approach of clustering algorithms:*** 
->  - 1. Partitional clustering
->       - K-Means algorithm: It is not suitable for disovering clusters that are not hyper-spheres.
->  - 2. Hierarachical clustering 
->       - Agglomerative method
->       - Divisible method
->  - 3. Density-based clustering
->        - Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
-
+>
+>
 >**Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
