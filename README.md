@@ -215,7 +215,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
 >**Step 4:**
 > ```
-># ============================================ Step 4: Classification ==================================================
+> # ============================================ Step 4: Classification ==================================================
 > model, type_class = classification(Data, Labels, type_class='KNN', hidden_layer_mlp=(10,), max_iter=200, kernel_svm='rbf',
 >                                   c_svm=10, gamma_svm=0.7, max_depth=5, criterion_dt='entropy', n_estimators=500)
 > Accuracy_Train, Cr_Train, Accuracy_Test, Cr_Test = output_network(Data, Labels, model, type_class, K_fold=5)
@@ -229,10 +229,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 > gamma_svm=Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. 
 > max_depth=The maximum depth of the tree, random forest and XGBoost; criterion= 'gini', 'entropy', 'log_loss';
 > n_estimators:The number of trees in the forest.
->"""
+> """
 > ```
-
-
 
 
 >| Method | Accuracy | precision|recall|f1-score|
