@@ -244,6 +244,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 |0.97|0.97|0.97|0.97|0.99|
 
 </td></tr> </table>
->![combine_images](https://user-images.githubusercontent.com/96347878/185500667-eccbf704-2e2c-4fdd-8793-ca97231ec8e5.jpg)
+>
+> ![combine_images](https://user-images.githubusercontent.com/96347878/185500667-eccbf704-2e2c-4fdd-8793-ca97231ec8e5.jpg)
 
 
