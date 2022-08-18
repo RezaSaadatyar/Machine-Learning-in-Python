@@ -1,23 +1,3 @@
-
-
->***Training**                                                                   **Test**
->| Method | Accuracy | precision|recall|f1-score|AUC|
->| ------ | ----- |-------|----- |-------|-------|
->| LR  | 0.97 |  0.98 | 0.97 |  0.97 |0.99|
->|**RF**|**1**|**1**|**1**|**1**|**1**|
->| DT |  0.97|  0.97 |  0.97| 0.97  | 0.99|
->| NB|  0.96|  0.96 | 0.96 | 0.96  | 0.99|
->| MLP | 0.98 | 0.98  |  0.98|   0.98|0.99 |
->| SVM | 0.98 | 0.98  |  0.98|   0.98|0.99 |
->| KNN |  1| 1  | 1 | 1  | 0.99|
->| LDA|  0.98| 0.97  | 0.97 |  0.97 |0.99 |
->| AdaBoost |  0.97| 0.97  | 0.97 | 0.97  |0.99 |
->| XGBoost | 1 |  1 | 1 | 1  | 0.99|
->
->|  |  |   |  |   | |
-
-
-
 ####   Machine Learning in Python
 >***This repository Covers:***
 >- 1. A brief about types of classification & clustering algorithms
@@ -231,9 +211,36 @@ A machine learning algorithm (such as **classification, clustering or regression
 > n_estimators:The number of trees in the forest.
 > """
 > ```
+> <table>
+ <tr><th>Training </th><th>Test</th></tr>
+<tr><td>
+ 
+| Method | Accuracy | precision|recall|f1-score|AUC|
+| ------ | ----- |-------|----- |-------|-------|
+|KNN  | 0.96 |  0.96 | 0.96 |  0.96 |0.99|
+|LR  | 0.97 |  0.97 | 0.97 |  0.97 |0.99| 
+| MLP | 0.97 | 0.97  |  0.97|   0.97|0.99 | 
+|SVM | 0.97 | 0.97  |  0.97|   0.97|0.99 |  
+|DT | 0.97 | 0.98  |  0.97|   0.97|0.99 |  
+|NB | 0.88 | 0.89  |  0.88|   0.88|0.98 | 
+|RF | 0.97 | 0.98  |  0.97|   0.97|0.99 |
+|AdaBoost | 0.94 | 0.95  |  0.94|   0.94|0.98 |
+|XGBoost | 0.98 | 0.98  |  0.98|   0.98|0.99 |
+|LDA | 0.96 | 0.96  |  0.96|   0.96|0.99 |
+ 
+</td><td>
 
+ Accuracy | precision|recall|f1-score|AUC|
+|----- |-------|----- |-------|-------|
+|0.97 |  0.97 | 0.97 |  0.97 |0.98|
+|1 | 1 |1 |  1 |0.98| 
+|0.97 | 0.97 |0.97 |  0.97 |0.99| 
+| 0.97| 0.97|0.97|0.97|0.99|  
+| 0.93| 0.94|0.93|0.93|0.98| 
+| 0.93| 0.94|0.93|0.93|0.98|
+|1|1|1|1|0.98|
+|1|1|1|1|0.98|
+|1|1|1|1|0.96|
+|0.97|0.97|0.97|0.97|0.99|
 
->| Method | Accuracy | precision|recall|f1-score|
->| --------------- | -------------- |----------------|
->|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
->|Computationally faster |Slower |Medium  |
+</td></tr> </table>
