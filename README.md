@@ -91,7 +91,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - K-Nearest Neighbors (KNN)
 >       - Logistic Regression (LR)
 >       - Multilayer perceptron (MLP)
->       - Support Vector Machins (SVM)
+>       - Support Vector Machine (SVM)
 >       - Radial Basis Function (RBF) 
 >       - Linear Discriminant Analysis (LDA)
 >    - Regression
@@ -214,8 +214,27 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ***Feature selection:***
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
 >**Step 4:**
->```
->```
+> ```
+># ============================================ Step 4: Classification ==================================================
+> model, type_class = classification(Data, Labels, type_class='KNN', hidden_layer_mlp=(10,), max_iter=200, kernel_svm='rbf',
+>                                   c_svm=10, gamma_svm=0.7, max_depth=5, criterion_dt='entropy', n_estimators=500)
+> Accuracy_Train, Cr_Train, Accuracy_Test, Cr_Test = output_network(Data, Labels, model, type_class, K_fold=5)
+> """
+> type_class: 
+> LR: LogisticRegression; MLP: Multilayer perceptron, SVM:Support Vector Machine; DT: Decision Tree; NB: Naive Bayes;
+> RF: Random Forest; AdaBoost; XGBoost; LDA: Linear Discriminant Analysis; KNN:K-Nearest Neighbors 
+> Parameters:
+> The number of hidden layers: hidden_layer_mlp; The number of epochs MLP: max_iter,
+> kernel_svm=‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’;  c_svm=Regularization parameter, 
+> gamma_svm=Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. 
+> max_depth=The maximum depth of the tree, random forest and XGBoost; criterion= 'gini', 'entropy', 'log_loss';
+> n_estimators:The number of trees in the forest.
+>"""
+> ```
+
+
+
+
 >| Method | Accuracy | precision|recall|f1-score|
 >| --------------- | -------------- |----------------|
 >|Uses proxy measure| Uses predictive model |Feature selection is embedded in the model building phase|
