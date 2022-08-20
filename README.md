@@ -199,7 +199,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185249806-410e2bd9-643c-4334-9cb2-63d6d2ded658.png)
 > ***Feature selection:***
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
->**Step 4:**<br/> The classification output for the first three features of the iris dataset.
+>**Step 4:**<br/> The classification and clustering outputs for the first three features of the iris dataset.
 > ```
 > # ======================================= Step 4: Classification & clustering ==============================================
 > model, type_class = classification(Data, Labels, type_class='KNN', hidden_layer_mlp=(10,), max_iter=200, kernel_svm='rbf',
@@ -264,4 +264,4 @@ OPTICS; MiniBatchKMeans
 """
 ```
 ***The clustering output for iris's first three features.***
-![combine_images](https://user-images.githubusercontent.com/96347878/185754232-135decc6-e3a4-45eb-8e1f-a0d5738329d3.jpg)
+![combine_images](https://user-images.githubusercontent.com/96347878/185768499-5cb63cfe-a3ca-403c-8ab5-eae5027fb3a9.png)
