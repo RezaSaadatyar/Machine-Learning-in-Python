@@ -84,12 +84,15 @@ A machine learning algorithm (such as **classification, clustering or regression
 >  - Unsupervised Learning
 >     - Clustering
 >       - DBSCAN
+>       - Birch 
 >       - K-Means
->       - Mean-shift
+>       - OPTICS 
+>       - Mean shift
+>       - Agglomerative
+>       - Mini-Batch K-Mean
 >       - Fuzzy c-means (FCM)
->       - Gaussian Mixture (GM)
->       - Agglomerative Hierarchial (AH)
->       - Principal Component Analysis (PCA)
+>       - Gaussian Mixture Model(GMM)
+>       - Spectral Clustering
 >  - Reinforcement Learning
 >     - Decision Making
 >       - Q-Learning
