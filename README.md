@@ -69,8 +69,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 
 ---
 >**Types of Machine Learning:**
->  - Supervised Learning
->    - Classification
+>  - **Supervised Learning**
+>    - ***Classification***
 >       - AdaBoost
 >       - Naive Bayes (NB)
 >       - Random Forest (RF)
@@ -79,17 +79,16 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Logistic Regression (LR)
 >       - Multilayer perceptron (MLP)
 >       - Support Vector Machine (SVM)
->       - Radial Basis Function (RBF) 
 >       - Linear Discriminant Analysis (LDA)
->    - Regression [Link](https://github.com/RezaSaadatyar/Time-Series-Forecasting)
+>    - ***Regression [Link](https://github.com/RezaSaadatyar/Time-Series-Forecasting)***
 >       - Lasso Regression
 >       - Ridge Regression
 >       - Linear Regression
 >       - Decision Trees Regression
 >       - Neural Network Regression
 >       - Support Vector Regression
->  - Unsupervised Learning
->     - Clustering
+>  - **Unsupervised Learning**
+>     - ***Clustering***
 >       - DBSCAN
 >       - Birch 
 >       - K-Means
@@ -97,11 +96,10 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Mean shift
 >       - Agglomerative
 >       - Mini-Batch K-Mean
->       - Fuzzy c-means (FCM)
 >       - Gaussian Mixture Model(GMM)
 >       - Spectral Clustering
->  - Reinforcement Learning
->     - Decision Making
+>  - **Reinforcement Learning**
+>     - ***Decision Making***
 >       - Q-Learning
 >       - R Learning
 >       - TD Learning
