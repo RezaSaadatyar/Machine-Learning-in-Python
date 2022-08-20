@@ -8,6 +8,9 @@
 - 4. Prediction and performance check
 - 5. Iris dataset classification & clustering example<br/>
 
+:anger::anger:The program will run automatically when you run **code/file Main.py**, and you do not need to run any of the other codes. Depending on your goal, you can execute all steps independently or interdependently within the code/file main. In addition, you can copy and run each section along with its related files in your own code or disable each section with a **#**. To run the program, the only thing you need is your input, which is **data and labels (Data = Your data, Labels = Your label/target)**:anger::anger:
+
+
 ---
 **Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
 
