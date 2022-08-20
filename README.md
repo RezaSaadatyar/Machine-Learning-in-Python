@@ -22,7 +22,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >
 >***There are two ways to reduce dimensionality:***<br/>1. By only keeping the most relevant variables from the original dataset (this technique is called ***feature selection***).<br/>2. Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called ***dimensionality reduction***).<br/>
 >
->**Feature extraction:**<br/>
+>**Feature extraction methods:**<br/>
 >   - Principal Component Analysis (PCA) 
 >   - Linear Discrimination Analysis (LDA)
 >   - Independent component analysis (ICA)
