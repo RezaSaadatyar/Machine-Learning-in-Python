@@ -153,13 +153,20 @@ A machine learning algorithm (such as **classification, clustering or regression
 ![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
 > **Step 1:**
 > ```
-> from sklearn import datasets
+> from Clustering import clustering
+> from Preparing_data import preparing_data
+> from Normalize import normalize_data
+> from Classification import classification
+> from Plot_clustering import plot_cluster
+> from Feature_Selection import featureselection
+> from Feature_Extraction import feature_extraction
+> from Output_Training_Test_Network import output_network
+> # ============================================Step 1: Preparing the data ==============================================
 > iris = datasets.load_iris()
-> Data = iris.data
+> Data = iris.data[:, 0:3]
 > Labels = iris.target
-> or  # Data, Labels = datasets.make_blobs(150, 4, centers=4, random_state=0)   # The make_blobs() function can be used to generate blobs of points with a Gaussian distribution.
-> # Labels = preprocessing.LabelEncoder()   # Encode target labels with value between 0 and n_classes-1 (if required).
-> # Labels = Labels.fit_transform(Labels)
+> # Data, Labels = datasets.make_blobs(150, 4, centers=4, random_state=0)
+> preparing_data(Data, Labels)
 > ```
 > **Step 2:** <br/>In this section, Iris datasets are used, so filtering and normalization are not necessary.<br/>
 > ```
