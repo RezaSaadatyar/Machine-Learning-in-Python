@@ -1,13 +1,17 @@
-####   Machine Learning in Python
->***This repository Covers:***
->- 1. A brief about types of classification & clustering algorithms
->- 2. Preparing the data
->- 3. Training the model
->- 4. Prediction and performance check
->- 5. Iris dataset classification & clustering example<br/>
+**Machine Learning in Python**
 
+---
+***This repository Covers:***
+- 1. A brief about types of classification & clustering algorithms
+- 2. Preparing the data
+- 3. Training the model
+- 4. Prediction and performance check
+- 5. Iris dataset classification & clustering example<br/>
+
+---
 **Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
 
+---
 A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 
 
@@ -60,7 +64,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >|Avoids overfitting |Prone to overfitting|Less Prone to overfitting|
 >|Sometimes may fail to select best features |Better| Good performance|
 
-
+---
 >**Types of Machine Learning:**
 >  - Supervised Learning
 >    - Classification
@@ -116,14 +120,15 @@ A machine learning algorithm (such as **classification, clustering or regression
 >    
 >***K-means:*** During data mining, the K-means algorithm starts with a set of randomly selected centroids, which serve as the starting points for every cluster, and then performs iterative (repetitive) calculations to optimize their positions.<br/>
 >***FCM:*** Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.<br/>
- 
-> **Confusion matrix:**
->   - 1. TP (True Positive): The number of correct classification of positive examples
->   - 2. TN (True Negative): The number of correct classification of negative examples
->   - 3. FP (False Positive): The number of incorrect classification of negative examples
->   - 4. FN (False Negative): The number of incorrect classification of positive examples
->
->
+
+---
+**Confusion matrix:**
+  - 1. TP (True Positive): The number of correct classification of positive examples
+  - 2. TN (True Negative): The number of correct classification of negative examples
+  - 3. FP (False Positive): The number of incorrect classification of negative examples
+  - 4. FN (False Negative): The number of incorrect classification of positive examples
+---
+
 >**Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
@@ -140,15 +145,16 @@ A machine learning algorithm (such as **classification, clustering or regression
 >      - Statistical
 >        - Boxplot method
 >        - Histogram method
->        
-> ***Install the required packages (if required)***   
-> - pip install numpy
-> - pip install scipy
-> - pip install pandas
-> - pip install seaborn
-> - pip install matplotlib   
-> - pip install scikit-learn
 
+---
+***Install the required packages (if required)***   
+ - pip install numpy
+ - pip install scipy
+ - pip install pandas
+ - pip install seaborn
+ - pip install matplotlib   
+ - pip install scikit-learn
+---
 > **There are 6 steps to effective data classification:**
 ![Website Flowchart Template (1)](https://user-images.githubusercontent.com/96347878/184292921-53b07af7-3238-42ff-9c48-226cb2f965ce.png)
 > **Step 1:**
@@ -161,7 +167,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > from Feature_Selection import featureselection
 > from Feature_Extraction import feature_extraction
 > from Output_Training_Test_Network import output_network
-> # ============================================Step 1: Preparing the data ==============================================
+> # ============================================Step 1: Preparing the data ============================================== :point_down:
 > iris = datasets.load_iris()
 > Data = iris.data[:, 0:3]
 > Labels = iris.target
@@ -174,7 +180,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > # Data = filtering(Data, F_low=5, F_high=10, Order=3, Fs=50, btype='bandpass')      # btype:'low', 'high', 'bandpass', 'bandstop'
 > # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
 > ```
-> **Step 3:** Depending on your goals, you can activate function feature_extraction or featureselection
+> **Step 3:**<br/>Depending on your goals, you can activate function feature_extraction or featureselection
 > ```
 > # ==================================== Step 3: Feature Extraction & Selection ========================================
 > # Data = feature_extraction(Data, Labels, number_feature=3, number_neighbors=70, type_feature='PCA')
@@ -193,7 +199,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185249806-410e2bd9-643c-4334-9cb2-63d6d2ded658.png)
 > ***Feature selection:***
 > ![combine_images](https://user-images.githubusercontent.com/96347878/185245660-59db5822-55ec-4cd3-a457-328833786bef.jpg)
->**Step 4:** The classification output for the first three features of the iris dataset.
+>**Step 4:**<br/> The classification output for the first three features of the iris dataset.
 > ```
 > # ======================================= Step 4: Classification & clustering ==============================================
 > model, type_class = classification(Data, Labels, type_class='KNN', hidden_layer_mlp=(10,), max_iter=200, kernel_svm='rbf',
