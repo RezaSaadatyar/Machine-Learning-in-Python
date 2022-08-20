@@ -241,6 +241,14 @@ A machine learning algorithm (such as **classification, clustering or regression
 ![combine_images](https://user-images.githubusercontent.com/96347878/185501048-c922c649-79ee-4e57-8db0-fc15f1cfbfa5.jpg)
 ***The classification output for iris's first two features.***
 ![combine_images (1)](https://user-images.githubusercontent.com/96347878/185502742-19a90cf6-6f65-4d73-899e-f54cc0cd30c0.jpg)
+> ```
+> clustering(Data, n_clusters=3, max_iter=100, thr_brich=0.5,  branchfactor_brich=50, n_neighbor_SpecCluster=10,
+           minsamples_optics=15, max_dist_optics=5, batch_size_MBKmeans=10, type_cluster='MiniBatchKMeans')
+> """
+> type_cluster: kmeans; Agglomerative; DBSCAN; GMM:Gaussian Mixture Models; Meanshift; Birch; SpectralClustering; 
+> OPTICS; MiniBatchKMeans
+> """
+> > ```
 
 
-
+![combine_images](https://user-images.githubusercontent.com/96347878/185754232-135decc6-e3a4-45eb-8e1f-a0d5738329d3.jpg)
