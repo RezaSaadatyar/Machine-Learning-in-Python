@@ -74,7 +74,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Support Vector Machine (SVM)
 >       - Radial Basis Function (RBF) 
 >       - Linear Discriminant Analysis (LDA)
->    - Regression Click [here](https://github.com/RezaSaadatyar/Time-Series-Forecasting)
+>    - Regression [Link](https://github.com/RezaSaadatyar/Time-Series-Forecasting)
 >       - Lasso Regression
 >       - Ridge Regression
 >       - Linear Regression
