@@ -264,5 +264,6 @@ OPTICS; MiniBatchKMeans
 """
 ```
 ***The clustering output for iris's first three features.***
+
 ![combine_images](https://user-images.githubusercontent.com/96347878/185768555-891dc097-1380-4c99-98ea-bc76bad0a647.png)
 
