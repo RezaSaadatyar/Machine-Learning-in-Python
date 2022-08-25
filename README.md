@@ -52,7 +52,8 @@ A machine learning algorithm (such as **classification, clustering or regression
 >     
 >**Further information:**<br/> 
 > ***PCA:*** It is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the largest set (Maximising the variance of the whole set).<br/>
-> ***LDA:*** Maximising the distance between groups.<br/>
+>***LDA*** is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized (Maximising the distance between groups).<br/>
+>***LDA VS PCA:*** <br/>1. LDA classifies data vs PCA classifies features.<br/>2. LDa is a supervised learning technique vs PCA is a unsupervised learning techinque.<br/>3. LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation.<br/>4. LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions.<br/> 
 > ***TDSNE:*** It is a tool to visualize a high dimensional data. It converts similarities between data points to point probabilities and tries to minimize the *Kullback-Leibler (KL)* divergence between the joint probabilities of the low dimensional embedding and high dimensional data.<br/> 
 > ***Univariate:*** The univariate filter methods are the type of methods where individual features are ranked according to specific criteria.The top N features are then selected.<br/>
 > ***VT:***<br/>1. Compute the variance of feature<br/> 2. Assume that features with a higher variance may contain more useful information<br/> 3. Fast method but does not take the relationship among features into account.<br/>
@@ -77,6 +78,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Decision Trees (DT)
 >       - K-Nearest Neighbors (KNN)
 >       - Logistic Regression (LR)
+>       - Radial basis function (RBF)
 >       - Multilayer perceptron (MLP)
 >       - Support Vector Machine (SVM)
 >       - Linear Discriminant Analysis (LDA)
@@ -96,6 +98,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Mean shift
 >       - Agglomerative
 >       - Mini-Batch K-Mean
+>       - Fuzzy-c-Means (FCM)
 >       - Gaussian Mixture Model(GMM)
 >       - Spectral Clustering
 >  - **Reinforcement Learning**
@@ -106,8 +109,6 @@ A machine learning algorithm (such as **classification, clustering or regression
 >
 >**Further information:**<br/>
 >***LR*** is most useful when examining the influence of several independent variables on a single outcome.Only works when the predicted variable is binary, assumes independent predictors, and assumes no missing values.<br/>
->***LDA*** is a linear model for classification and dimensionality reduction.  Most commonly used for feature extraction in pattern classification problems. In LDA, data is projected to a space where the variance between classes is maximized, but the variance within classes is minimized.<br/>
->***LDA VS PCA:*** <br/>1. LDA classifies data vs PCA classifies features.<br/>2. LDa is a supervised learning technique vs PCA is a unsupervised learning techinque.<br/>3. LDA projects the data in a direction which proides maximum inter-class seperability vs PCA projects the data in a direction of maximum variation.<br/>4. LDA can reduce data up to 'number of class-1' dimension vs PCA can be used to reduce data up any dimentions.<br/> 
 >***DT*** can create complex trees that do not generalize well, and it can become unstable if a small variation in the data changes it completely.<br/>
 >***RF*** reduces over-fitting and is more accurate than decision trees in most cases. It has a slow real-time prediction, is difficult to implement, and has a complex algorithm.<br/>
 >***NB*** requires a small amount of training data to estimate the necessary parameters. The NB classifier is extremely fast compared with more sophisticated methods. In general, NB is not a good estimator.<br/>
