@@ -23,12 +23,12 @@ A machine learning algorithm (such as **classification, clustering or regression
 >***There are two ways to reduce dimensionality:***<br/>1. By only keeping the most relevant variables from the original dataset (this technique is called ***feature selection***).<br/>2. Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called ***dimensionality reduction***).<br/>
 >
 >**Feature extraction methods:**<br/>
->   - Principal Component Analysis (PCA) 
->   - Linear Discrimination Analysis (LDA)
+>   - Principal component Analysis (PCA) 
+>   - Linear discrimination analysis (LDA)
 >   - Independent component analysis (ICA)
 >   - Singular value decomposition (SVD)
 >   - Factor analysis (FA) 
->   - Isometric Feature Mapping (Isomap)
+>   - Isometric feature mapping (Isomap)
 >   - T-distributed stochastic neighbor embedding (TDSNE)
 >   
 > **Feature selection methods:**<br/>
@@ -42,7 +42,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >        - Pearson correlation
 >  - ***Warpper method:*** 
 >       - Forward feature selection (FFS)
->       - Exhaustive Feature Selection (EFS)
+>       - Exhaustive feature selection (EFS)
 >       - Recursive feature elimination (RFE)
 >       - Backward feature selection (BFS) 
 >   - ***Embedded method:*** 
@@ -73,34 +73,34 @@ A machine learning algorithm (such as **classification, clustering or regression
 >  - **Supervised Learning**
 >    - ***Classification***
 >       - AdaBoost
->       - Naive Bayes (NB)
->       - Random Forest (RF)
->       - Decision Trees (DT)
->       - K-Nearest Neighbors (KNN)
->       - Logistic Regression (LR)
+>       - Naive bayes (NB)
+>       - Random forest (RF)
+>       - Decision trees (DT)
+>       - K-Nearest neighbors (KNN)
+>       - Logistic regression (LR)
 >       - Radial basis function (RBF)
 >       - Multilayer perceptron (MLP)
->       - Support Vector Machine (SVM)
->       - Linear Discriminant Analysis (LDA)
+>       - Support vector machine (SVM)
+>       - Linear discriminant analysis (LDA)
 >    - ***Regression [Link](https://github.com/RezaSaadatyar/Time-Series-Forecasting)***
->       - Lasso Regression
->       - Ridge Regression
->       - Linear Regression
->       - Decision Trees Regression
->       - Neural Network Regression
->       - Support Vector Regression
+>       - Lasso regression
+>       - Ridge regression
+>       - Linear regression
+>       - Decision trees regression
+>       - Neural network regression
+>       - Support vector regression
 >  - **Unsupervised Learning**
 >     - ***Clustering***
 >       - DBSCAN
 >       - Birch 
->       - K-Means
+>       - K-means
 >       - OPTICS 
 >       - Mean shift
 >       - Agglomerative
->       - Mini-Batch K-Mean
->       - Fuzzy-c-Means (FCM)
->       - Gaussian Mixture Model(GMM)
->       - Spectral Clustering
+>       - Mini-batch k-Mean
+>       - Fuzzy-c-means (FCM)
+>       - Gaussian mxture model(GMM)
+>       - Spectral clustering
 >  - **Reinforcement Learning**
 >     - ***Decision Making***
 >       - Q-Learning
