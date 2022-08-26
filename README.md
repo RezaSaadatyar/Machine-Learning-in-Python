@@ -11,13 +11,13 @@
 
 
 ---
-**Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
+:black_circle:**Standardization & Normalization:**<br/>Scaling is required when we use any machine learning algorithm that require *gradient calculation*. Examples of machine learning algorithms that require gradient calculation are: *linear/logistic regression* and *artificial neural networks*. Scaling  is not required for distance-based and tree-based algorithms such as *K-means clustering, Support Vector Machines, K Nearest Neighbors, decision tree, random forest* and *XG-Boost*. Having different sales for each feature will result in a different step size which in turn jeopardizes the proess of reaching a minimum point.
 
 ---
 A machine learning algorithm (such as **classification, clustering or regression**) uses a training dataset to determine weight factors that can be applied to unseen data for predictive purposes. Before implementing a ML algorithm, it is necessary to select only relevant features in the training dataset. The process of transforming a dataset in order to select only relevant features necessary for training is called **dimensionality reduction**.
 
 
-> **Dimensionality Reduction:**<br/>***Feature seletion and dimensionality reduction are important because of three main reasons:***<br/>1. Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).<br/>2. Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.<br/> 3. Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
+>:red_circle:**Dimensionality Reduction:**<br/>***Feature seletion and dimensionality reduction are important because of three main reasons:***<br/>1. Prevents overfitting: A high-dimensional dataset having too many features can sometimes lead to overfitting (model captures both real and random effets).<br/>2. Simplicity: An over-complex model having too many features can be hard to interpret especially when features are correlated with each other.<br/> 3. Computational efficiency: A model trained on a lower-dimensional dataset is omputationally efficient (execution of algorithm reuires less computational time.<br/> 
 >
 >***There are two ways to reduce dimensionality:***<br/>1. By only keeping the most relevant variables from the original dataset (this technique is called ***feature selection***).<br/>2. Using a smaller set of new variables containing basically the same information as the input variables, each being a combination of the input variables (this technique is called ***dimensionality reduction***).<br/>
 >
@@ -68,7 +68,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >|Sometimes may fail to select best features |Better| Good performance|
 
 ---
->**Types of Machine Learning:**
+>:large_blue_circle:**Types of Machine Learning:**<br />
 >  - **Supervised Learning**<br/> Supervised learning is a type of machine learning system that uses both inputs (values from the variables in your dataset) and outputs (predicted values for the target variable). It provides the algorithm with a learning memory for future data handling by identifying and labeling data a priori.
 >    - ***Classification***
 >       - AdaBoost
@@ -123,14 +123,14 @@ A machine learning algorithm (such as **classification, clustering or regression
 >***FCM:*** Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.<br/>
 
 ---
-**Confusion matrix:**
+:white_circle:**Confusion matrix:**
   - 1. TP (True Positive): The number of correct classification of positive examples
   - 2. TN (True Negative): The number of correct classification of negative examples
   - 3. FP (False Positive): The number of incorrect classification of negative examples
   - 4. FN (False Negative): The number of incorrect classification of positive examples
 ---
 
->**Types of outliers:**
+>![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png)**Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
 > - 3. Contextual outliers
