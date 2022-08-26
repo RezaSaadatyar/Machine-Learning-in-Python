@@ -1,5 +1,4 @@
 ### $$\textcolor{blue}{\text{Machine Learning in Python}}$$
-
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
 - 2. Preparing the data
