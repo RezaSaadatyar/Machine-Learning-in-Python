@@ -1,6 +1,5 @@
-**Machine Learning in Python**
+### $$\textcolor{blue}{\text{Machine Learning in Python}}$$
 
----
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
 - 2. Preparing the data
@@ -70,7 +69,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 
 ---
 >**Types of Machine Learning:**
->  - **Supervised Learning**
+>  - **Supervised Learning**<br/> Supervised learning is a type of machine learning system that uses both inputs (values from the variables in your dataset) and outputs (predicted values for the target variable). It provides the algorithm with a learning memory for future data handling by identifying and labeling data a priori.
 >    - ***Classification***
 >       - AdaBoost
 >       - Naive bayes (NB)
