@@ -80,7 +80,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 >       - Multilayer perceptron (MLP)
 >       - Support vector machine (SVM)
 >       - Linear discriminant analysis (LDA)
->    - ***Regression [Link](https://github.com/RezaSaadatyar/Time-Series-Forecasting)***
+>    - ***Regression [(Further information)](https://github.com/RezaSaadatyar/Time-Series-Forecasting)***
 >       - Lasso regression
 >       - Ridge regression
 >       - Linear regression
@@ -126,14 +126,17 @@ A machine learning algorithm (such as **classification, clustering or regression
 >***FCM:*** Based on the cluster center membership, each point is assigned a percentage from 0 to 100 percent. Comparatively, this can be quite powerful compared to traditional hard-threshold clustering, where each point is assigned an exact, crisp label.<br/>
 
 ---
-:white_circle:  **Confusion matrix:**
+:yellow_circle: **Evaluation criteria:**<br/> 
+There are different evaluation metrics for different machine learning approaches, such as ***accuracy, precision, recall, F-score, receiver operating characteristic (ROC), area under the curve (AUC)*** for classification and ***mean absolute error (MAE), mean squared error (MSE), and R-squared score*** for regression scenarios. MAE is a metric that can be used to measure forecast accuracy.<br/>
+
+**Confusion matrix:**
   - 1. TP (True Positive): The number of correct classification of positive examples
   - 2. TN (True Negative): The number of correct classification of negative examples
   - 3. FP (False Positive): The number of incorrect classification of negative examples
   - 4. FN (False Negative): The number of incorrect classification of positive examples
 ---
 
->![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png)   **Types of outliers:**
+>:green_circle: **Types of outliers:**
 > - 1. Global outliers
 > - 2. Collective outliers
 > - 3. Contextual outliers
