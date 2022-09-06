@@ -1,4 +1,5 @@
-**Machine Learning with Python**
+**Machine Learning with Python**<br/>
+
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
 - 2. Preparing the data
