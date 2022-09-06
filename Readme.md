@@ -174,7 +174,7 @@ There are different evaluation metrics for different machine learning approaches
 > from Feature_Selection import featureselection
 > from Feature_Extraction import feature_extraction
 > from Output_Training_Test_Network import output_network
-> # ============================================Step 1: Preparing the data ============================================== :point_down:
+> # ============================================Step 1: Preparing the data ==============================================
 > iris = datasets.load_iris()
 > Data = iris.data[:, 0:3]
 > Labels = iris.target
