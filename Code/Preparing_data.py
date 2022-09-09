@@ -6,3 +6,4 @@ def preparing_data(data, labels):
         data = data.T
     Labels = preprocessing.LabelEncoder()
     Labels = Labels.fit_transform(labels)
+    return data, Labels
