@@ -21,7 +21,7 @@ iris = datasets.load_iris()
 Data = iris.data
 Labels = iris.target
 # Data, Labels = datasets.make_blobs(150, 4, centers=4, random_state=0)
-preparing_data(Data, Labels)
+data, Labels = preparing_data(Data, Labels)
 # ======================================== Step 2: Filtering & Data scaling ============================================
 # Data = filtering(Data, F_low=5, F_high=10, Order=3, Fs=50, btype='bandpass')      # btype:'low', 'high', 'bandpass', 'bandstop'
 # Data = normalize_data(Data, Type_Normalize='MinMaxScaler', Display_Figure='on')   # Type_Normalize:'MinMaxScaler', 'normalize'
