@@ -131,10 +131,10 @@ A machine learning algorithm (such as **classification, clustering or regression
 There are different evaluation metrics for different machine learning approaches, such as ***accuracy, precision, recall, F-score, receiver operating characteristic (ROC), area under the curve (AUC)*** for classification and ***mean absolute error (MAE), mean squared error (MSE), and R-squared score*** for regression scenarios. MAE is a metric that can be used to measure forecast accuracy.<br/>
 
 **Confusion matrix:**
-  - 1. TP (True Positive): The number of correct classification of positive examples
-  - 2. TN (True Negative): The number of correct classification of negative examples
-  - 3. FP (False Positive): The number of incorrect classification of negative examples
-  - 4. FN (False Negative): The number of incorrect classification of positive examples
+  - 1. TP (True Positive): The number of correct classification of positive examples.
+  - 2. TN (True Negative): The number of correct classification of negative examples.
+  - 3. FP (False Positive): The number of incorrect classification of negative examples.
+  - 4. FN (False Negative): The number of incorrect classification of positive examples.
 ---
 
 >:green_circle: **Types of outliers:**
