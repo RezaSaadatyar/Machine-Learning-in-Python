@@ -3,7 +3,7 @@ from scipy import signal
 
 def filtering(Data, F_low, F_high, Order, Fs, btype):
     if Data.shape[0] > Data.shape[1]:
-        data = Data.T
+        Data = Data.T
     f_low = F_low / (Fs / 2)
     f_high = F_high / (Fs / 2)
     if btype == "low":
@@ -14,5 +14,5 @@ def filtering(Data, F_low, F_high, Order, Fs, btype):
         b, a = signal.butter(Order, [f_low, f_high], btype='bandpass')
     elif btype == "bandstop":
         b, a = signal.butter(Order, [f_low, f_high], btype='bandstop')
-    data_filter = signal.filtfilt(b, a, data)
+    data_filter = signal.filtfilt(b, a, Data)
     return data_filter.T
