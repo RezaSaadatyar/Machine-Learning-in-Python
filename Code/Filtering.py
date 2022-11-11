@@ -2,8 +2,9 @@ from scipy import signal
 
 
 def filtering(Data, F_low, F_high, Order, Fs, btype):
-    if Data.shape[0] > Data.shape[1]:
-        Data = Data.T
+    if Data.ndim > 1:
+        if Data.shape[0] > Data.shape[1]:
+            Data = Data.T
     f_low = F_low / (Fs / 2)
     f_high = F_high / (Fs / 2)
     if btype == "low":
