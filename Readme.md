@@ -69,6 +69,7 @@ A machine learning algorithm (such as **classification, clustering or regression
 
 ---
 >:large_blue_circle: **Types of Machine Learning:**<br />
+>![Blank diagram - Page 1 (2)](https://user-images.githubusercontent.com/96347878/209427359-ef4d3269-e485-4e15-a038-f9d8fb8c06c6.png)
 >  - **Supervised Learning**<br/> Supervised learning is a type of machine learning system that uses both inputs (values from the variables in your dataset) and outputs (predicted values for the target variable). It provides the algorithm with a learning memory for future data handling by identifying and labeling data a priori.
 >    - ***Classification***
 >       - AdaBoost
