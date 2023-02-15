@@ -104,7 +104,6 @@ A machine learning algorithm (such as **classification, clustering or regression
 >  - **Reinforcement Learning [(Further information)](https://github.com/RezaSaadatyar/Reinforcement-Learning)**<br/>Reinforcement learning is a type of machine learning in which an algorithm is trained to make a sequence of decisions. A trial-and-error process is used by the algorithm to come up with a solution in an uncertain, potentially complex environment.
 >     - ***Decision Making***
 >       - Q-Learning
->       - R Learning
 >       - TD Learning
 >
 >**Further information:**<br/>
