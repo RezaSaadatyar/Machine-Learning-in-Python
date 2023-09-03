@@ -1,30 +1,14 @@
 **Classification**<br/>
 
 **Binary Classification:**<br/>
-In machine learning, binary classification is a supervised learning algorithm that categorizes new observations into one of two outcomes usually represented as 0 or 1, true or false, positive or negative, etc.
+It is a type of supervised learning algorithm used in machine learning. It aims to classify new observations into one of two possible outcomes, typically denoted as 0 or 1, true or false, positive or negative, and so on.
 
-How Binary Classification Works?
+**How Binary Classification Works?**<br/>The process of binary classification involves training an algorithm on a dataset that has labeled data points with binary labels. The algorithm then learns how to associate input features with their respective binary labels. Once the algorithm is trained, it can be utilized to predict binary labels for new and unseen data points.
 
-In binary classification, the algorithm is trained on
-a labeled dataset, where each data point is
-associated with a binary label.
-The algorithm then learns to map the input
-features to the corresponding binary label. Once
-trained, the algorithm can be used to predict the
-binary label for new, unseen data points.
-
-Common Binary Classification Models
-Logistic Regression: It is used for binary classification problems, where
-the output variable is categorical with two
-possible values.
-Neural Networks: This algorithm is designed to cluster raw input,
-recognize patterns, or interpret sensory data.
-Despite their multiple advantages, neural
-networks require significant computational
-resources. It can get complicated to fit a neural
-network when there are thousands of
-observations.
-Support Vector Machines: A support vector machine is typically used for
+**Common Binary Classification Models:**<br/>
+- `Logistic Regression:` This is utilized in problems involving binary classification, where the output variable has two categorical values.
+- `Neural Networks:` This algorithm clusters input, recognizes patterns, and interprets sensory data. However, neural networks require significant computational resources, making it difficult to fit them when dealing with thousands of observations.
+- `Support Vector Machines:` A support vector machine is typically used for
 classification problems by constructing a
 hyperplane where the distance between two
 classes of data points is at its maximum. This
