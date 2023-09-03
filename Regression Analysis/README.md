@@ -28,7 +28,7 @@ Regression is a technique used to analyze the connection between independent var
 | Lasso Regression        | Feature selection, preventing overfitting, and managing multicollinearity| 1 or more (Multiple predictors) | Yes (L1 regularization)        | Moderate             | L1 regularization (lasso penalty) |
 | ElasticNet Regression   | Combining L1 and L2 regularization to balance feature selection and multicollinearity| 1 or more (Multiple predictors) | Yes (L1 and L2 regularization) | Moderate             | L1 and L2 regularization (elastic net penalty) |
 | Bayesian Regression     | Modeling uncertainty and incorporating prior knowledge into regression models| 1 or more (Multiple predictors) | Yes (through Bayesian framework)| High                  | Bayesian regularization        |
-
+----
 **Evaluation metrics:**
 - `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.
 - `Mean Absolute Percentage Error (MAPE):` MAPE measures the average percentage difference between the actual values and the predicted values. It is expressed as a percentage and is useful for understanding the magnitude of errors in relation to the actual values. However, MAPE has some limitations, such as being sensitive to zero or very small actual values (which can result in division by zero) and not penalizing large errors proportionally. 
