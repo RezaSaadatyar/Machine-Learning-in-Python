@@ -9,8 +9,15 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `Logistic Regression:` This is utilized in problems involving binary classification, where the output variable has two categorical values.
 - `Neural Networks:` This algorithm clusters input, recognizes patterns, and interprets sensory data. However, neural networks require significant computational resources, making it difficult to fit them when dealing with thousands of observations.
  - `Support Vector Machines: `Support vector machines are used for classification by creating a hyperplane that maximizes the distance between two classes of data points. This hyperplane, known as the decision boundary, separates the classes of data points on either side. For example, it could separate oranges from apples.
+ - `Decision Trees:` Decision trees are tree-like structures where each node represents a decision based on a feature, leading to one of two possible outcomes. Decision trees can be used for binary classification tasks and are interpretable.
 - `Random Forest:`It is a versatile form of supervised machine learning that can be applied to both classification and regression tasks. It involves an ensemble of decision trees that work together to enhance accuracy and minimize the risk of overfitting.
 - `Naive Bayes:` The Naive Bayes algorithm operates under the assumption that the input variables or features are independent of each other, given the class label. However, this assumption is considered "naive" as it does not account for the possibility of correlations between features in reality. The three primary variants of Naive Bayes are Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes.
+- `K-Nearest Neighbors (KNN):` KNN is a simple and intuitive classification algorithm that assigns a class label to a data point based on the majority class among its k-nearest neighbors in feature space.
+- `Gradient Boosting Machines (e.g., XGBoost, LightGBM):` Gradient boosting models like XGBoost and LightGBM are ensemble methods that iteratively build decision trees to correct the errors of previous trees. They are highly effective and widely used in binary classification competitions.
+- `Adaboost:` Adaboost is an ensemble method that combines multiple weak classifiers to create a strong binary classification model. It assigns different weights to training instances, focusing on the ones that are difficult to classify correctly.
+`Logistic Regression with L1 or L2 Regularization:` Logistic regression can be extended with L1 or L2 regularization to improve model robustness and feature selection. Regularized logistic regression helps prevent overfitting.
+
+
 ----
 **Confusion Matrix:**
 | Actual / Predicted   | Predicted Positive (P) | Predicted Negative (N) | Total |
@@ -40,7 +47,7 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 | Kappa Statistic (Cohen's Kappa) | (Observed agreement - Expected agreement) / (1 - Expected agreement) | -1 to 1     | Measures the agreement between predictions and actual outcomes, correcting for chance.              |
 | Log-Loss (Logarithmic Loss)    | -1/n * Σ(y log(p) + (1 - y) log(1 - p)) | 0 to ∞              | Measures the accuracy of predicted probabilities for each instance. Lower log-loss indicates better predictions. |
 
-`A high precision model is conservative: `it doesn’t always recognize the class correctly, but when it does, we can be assured that its answer is correct.<br/>
+`A high precision model is conservative:` Although it may not always identify the class accurately, once it does, we can have confidence in the accuracy of its response..<br/>
 `A high recall model is liberal:` it recognizes a class much more often, but in doing so it tends to include a lot of noise as well (false positives).<br/>
 `F1 score:` If our F1 score increases, it means that our model has increased performance for accuracy, recall or both.<br/>
-`ROC AUC:` The area under the ROC curve (AUC) is a single scalar value that measures the overall performance of the model. The AUC ranges from 0 to 1, with a higher value indicating better performance. An AUC of 0.5 indicates a random guess, while an AUC of 1.0 indicates perfect classification.
+`ROC AUC:` The performance of a model can be measured by a single scalar value called the area under the ROC curve (AUC). A higher value of AUC, which ranges from 0 to 1, indicates better performance. An AUC of 0.5 suggests a random guess, while an AUC of 1.0 indicates flawless classification.
