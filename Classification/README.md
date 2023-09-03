@@ -15,8 +15,8 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `K-Nearest Neighbors (KNN):` KNN is a simple and intuitive classification algorithm that assigns a class label to a data point based on the majority class among its k-nearest neighbors in feature space.
 - `Gradient Boosting Machines (e.g., XGBoost, LightGBM):` Gradient boosting models like XGBoost and LightGBM are ensemble methods that iteratively build decision trees to correct the errors of previous trees. They are highly effective and widely used in binary classification competitions.
 - `Adaboost:` Adaboost is an ensemble method that combines multiple weak classifiers to create a strong binary classification model. It assigns different weights to training instances, focusing on the ones that are difficult to classify correctly.
-`Logistic Regression with L1 or L2 Regularization:` Logistic regression can be extended with L1 or L2 regularization to improve model robustness and feature selection. Regularized logistic regression helps prevent overfitting.
-
+- `Logistic Regression with L1 or L2 Regularization:` Logistic regression can be extended with L1 or L2 regularization to improve model robustness and feature selection. Regularized logistic regression helps prevent overfitting.
+- `Ensemble Methods (Voting Classifiers):` Voting classifiers combine multiple binary classification models (e.g., logistic regression, decision trees) and make predictions based on a majority vote or weighted average of individual model predictions.
 
 ----
 **Confusion Matrix:**
