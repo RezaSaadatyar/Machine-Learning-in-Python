@@ -68,3 +68,11 @@ Here, \(n\) is the number of data points.
    - **$R^2$** ranges from 0 to 1 (or 0% to 100%) and represents the proportion of variance explained.
    - **MAE/MSE/RMSE** provide absolute error measures but do not consider variance explained.
 
+
+| Metric                        | Range              | Interpretation                                              | Formula                                                         | Key Difference                                                |
+|-------------------------------|--------------------|------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
+| Mean Absolute Error (MAE)     | 0 to ∞             | Lower values indicate better accuracy.                     | \(\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|\)  | Treats all errors equally; simple and interpretable.          |
+| Mean Squared Error (MSE)      | 0 to ∞             | Larger errors are more heavily penalized.                  | \(\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2\) | Squares errors, emphasizing larger errors; sensitive to outliers. |
+| Root Mean Squared Error (RMSE)| 0 to ∞             | Penalizes larger errors while keeping units interpretable. | \(\text{RMSE} = \sqrt{\text{MSE}}\)                            | Square root of MSE; interpretable in target units.            |
+| Coefficient of Determination  | 0 to 1 (or 0% to 100%) | Higher values indicate better fit.                        | \(R^2 = 1 - \frac{\text{SSR}}{\text{SST}}\)                   | Measures explanatory power and overall model fit.             |
+
