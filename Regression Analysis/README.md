@@ -18,6 +18,17 @@ Regression is a technique used to analyze the connection between independent var
 - `Non-linearity:` Regression models assume a linear relationship between independent and dependent variables, but non-linear relationships can result in inaccurate predictions.
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
 
+| **Regression Type**    | **Use Case**                                    | **Number of Independent Variables** | **Handling Multicollinearity** | **Interpretability** | **Regularization**              |
+|------------------------|-------------------------------------------------|-----------------------------------|---------------------------------|-----------------------|--------------------------------|
+| Simple Linear Regression| Predicting a continuous outcome from one predictor variable| 1 (One predictor)              | No                              | High                  | No regularization              |
+| Multiple Linear Regression | Predicting a continuous outcome from multiple predictor variables| 2 or more (Multiple predictors) | Yes (can be addressed)          | Moderate to High     | No regularization              |
+| Polynomial Regression   | Capturing non-linear relationships between predictor and outcome variables| 1 (One predictor)              | No                              | Moderate             | No regularization              |
+| Logistic Regression     | Classifying outcomes into binary categories based on predictor variables| 1 or more (Multiple predictors) | Yes (can be addressed)          | Moderate to High     | No regularization              |
+| Ridge Regression        | Preventing overfitting and managing multicollinearity in linear models| 1 or more (Multiple predictors) | Yes (L2 regularization)        | Moderate             | L2 regularization (ridge penalty) |
+| Lasso Regression        | Feature selection, preventing overfitting, and managing multicollinearity| 1 or more (Multiple predictors) | Yes (L1 regularization)        | Moderate             | L1 regularization (lasso penalty) |
+| ElasticNet Regression   | Combining L1 and L2 regularization to balance feature selection and multicollinearity| 1 or more (Multiple predictors) | Yes (L1 and L2 regularization) | Moderate             | L1 and L2 regularization (elastic net penalty) |
+| Bayesian Regression     | Modeling uncertainty and incorporating prior knowledge into regression models| 1 or more (Multiple predictors) | Yes (through Bayesian framework)| High                  | Bayesian regularization        |
+
 **Evaluation metrics:**
 - `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.
 - `Mean Absolute Percentage Error (MAPE):` MAPE measures the average percentage difference between the actual values and the predicted values. It is expressed as a percentage and is useful for understanding the magnitude of errors in relation to the actual values. However, MAPE has some limitations, such as being sensitive to zero or very small actual values (which can result in division by zero) and not penalizing large errors proportionally. 
