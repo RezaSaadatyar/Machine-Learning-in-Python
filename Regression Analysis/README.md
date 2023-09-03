@@ -19,35 +19,11 @@ Regression is a technique used to analyze the connection between independent var
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
 
 **Evaluation metrics:**
-- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.<br/>
-Where:
-  - n is the number of data points in the dataset.
-  - $y_{i}$ represents the actual or observed value for the i-th data point.
-  - $\hat{y}_i$ represents the predicted value for the i-th data point.
-  - $|\cdot|$ denotes the absolute value, ensuring that the differences are positive.
+- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.
 - `Mean Absolute Percentage Error (MAPE):` MAPE measures the average percentage difference between the actual values and the predicted values. It is expressed as a percentage and is useful for understanding the magnitude of errors in relation to the actual values. However, MAPE has some limitations, such as being sensitive to zero or very small actual values (which can result in division by zero) and not penalizing large errors proportionally. 
-$MAPE = \frac{1}{n} \sum_{i=1}^{n} \left(\frac{|y_i - \hat{y}_i|}{|y_i|}\right) \times 100$<br/>
-Where:
-  - n is the number of data points in the dataset.
-  - $y_{i}$ represents the actual or observed value for the i-th data point.
-  - $\hat{y}_i$ represents the predicted value for the i-th data point.
-  - $|\cdot|$ denotes the absolute value.
-- `Mean Squared Error (MSE):` It measures the average of the squared differences between the actual values and the predicted values in a dataset. MSE is particularly useful when you want to penalize larger errors more heavily than smaller errors.$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$<br/>
-Where:
-   - n is the number of data points in the dataset.
-   - $y_{i}$ represents the actual or observed value for the i-th data point.
-   - $\hat{y}_i$ represents the predicted value for the i-th data point.
-- `Root Mean Squared Error (RMSE):` RMSE measures the square root of the average of the squared differences between the actual values and the predicted values in a dataset. It is particularly useful when you want to express the error metric in the same unit as the target variable and penalize larger errors more heavily. $RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$<br/>
-Where:
-  - n is the number of data points in the dataset.
-  - $y_{i}$ represents the actual or observed value for the i-th data point.
-  - $\hat{y}_i$ represents the predicted value for the i-th data point.
- - `Coefficient of Determination (R²):` R-squared is a measure of the proportion of variance in the target variable explained by independent variables. It indicates the model's fit to the data. $R^2 = 1 - \frac{\text{SSR}}{\text{SST}}$<br/>
-Where:
-- SSR (Sum of Squared Residuals) represents the sum of the squared differences between the observed values $y_{i}$ and the predicted values $\hat{y}_i$ by the regression model.
-- SST (Total Sum of Squares) represents the sum of the squared differences between the observed values $y_{i}$ and the mean of the observed values $\bar{y}:  SST = \sum_{i=1}^{n} (y_i - \bar{y})^2$<br/>
-Here, \(n\) is the number of data points.
-
+- `Mean Squared Error (MSE):` It measures the average of the squared differences between the actual values and the predicted values in a dataset. MSE is particularly useful when you want to penalize larger errors more heavily than smaller errors.
+- `Root Mean Squared Error (RMSE):` RMSE measures the square root of the average of the squared differences between the actual values and the predicted values in a dataset. It is particularly useful when you want to express the error metric in the same unit as the target variable and penalize larger errors more heavily.
+ - `Coefficient of Determination (R²):` R-squared is a measure of the proportion of variance in the target variable explained by independent variables. It indicates the model's fit to the data. 
 | Metric                        | Range              | Interpretation                                      | Key Differences Among Metrics                           |
 |-------------------------------|--------------------|----------------------------------------------------|--------------------------------------------------------|
 | Mean Absolute Error (MAE)     | 0 to ∞             | Lower values indicate better accuracy.             | Treats all errors equally; simple and easy to interpret. |
@@ -69,10 +45,15 @@ Here, \(n\) is the number of data points.
    - **MAE/MSE/RMSE** provide absolute error measures but do not consider variance explained.
 
 
-| Metric                        | Range              | Interpretation                                              | Formula                                                         | Key Difference                                                |
-|-------------------------------|--------------------|------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
-| MAE     | 0 to ∞             | Lower values indicate better accuracy.                     |$$MAE = \frac{1}{n} \sum_{i=1}^{n} $$| | Treats all errors equally; simple and interpretable.          |
-| MSE     | 0 to ∞             | Larger errors are more heavily penalized.                  | \(\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2\) | Squares errors, emphasizing larger errors; sensitive to outliers. |
-| RMSE| 0 to ∞             | Penalizes larger errors while keeping units interpretable. | \(\text{RMSE} = \sqrt{\text{MSE}}\)                            | Square root of MSE; interpretable in target units.            |
-| $R^2$  | 0 to 1 (or 0% to 100%) | Higher values indicate better fit.                        | \(R^2 = 1 - \frac{\text{SSR}}{\text{SST}}\)                   | Measures explanatory power and overall model fit.             |
+| Metric                         | Description                                          | Formula                                                                  | Range                 | Interpretation                                         |
+|--------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|-----------------------|--------------------------------------------------------|
+| MAE      | Average absolute difference between actual and predicted values. |$$MAE = \frac{1}{n} \sum_{i=1}^{n}abs(y_i - \hat{y}_i)$$| 0 to ∞               | Lower values indicate better accuracy.                |
+| MAPE | Average percentage difference between actual and predicted values. |$$MAPE = \frac{1}{n} \sum_{i=1}^{n} \left(\frac{abs(y_i - \hat{y}_i)}{abs(y_i)}\right) \times 100$$| 0% to ∞ (no upper bound) | Represents errors as a percentage of actual values. |
+| MSE       | Average of squared differences between actual and predicted values. |$$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$      | 0 to ∞               | Larger errors are more heavily penalized.             |
+| RMSE | Square root of MSE, providing an error metric in the same units as the target variable. |$$RMSE = \sqrt{\text{MSE}}$$| 0 to ∞               | Penalizes larger errors while keeping units interpretable. |
+|$R^2$ | Measures the proportion of variance in the dependent variable explained by independent variables. |$$R^2 = 1 - \frac{\text{SSR}}{\text{SST}}$$ $$SST = \sum_{i=1}^{n} (y_i - \bar{y})^2$$ $$SSR = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$ | 0 to 1 (or 0% to 100%) | Higher values indicate better fit and explanatory power. |
 
+Where:
+   - n is the number of data points in the dataset.
+   - $y_{i}$ represents the actual or observed value for the i-th data point.
+   - $\hat{y}_i$ represents the predicted value for the i-th data point.
