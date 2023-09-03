@@ -13,16 +13,10 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `Naive Bayes:` The Naive Bayes algorithm operates under the assumption that the input variables or features are independent of each other, given the class label. However, this assumption is considered "naive" as it does not account for the possibility of correlations between features in reality. The three primary variants of Naive Bayes are Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes.
 
 **Evaluating a Binary Classification Model:**
- - `True Positive (TP):` is when the patient is diseased
-and the model predicts "diseased"
-False Positive (FP) or Type 1 Error is when the
-patient is healthy but the model predicts
-"diseased"
-True Negative (TN) is when the patient is healthy
-and the model predicts "healthy"
-False Negative (FN) or Type 2 Error is when the
-patient is diseased and the model predicts
-"healthy".
+- `True Negatives (TN):` The cases in which the model correctly predicted the negative class, and the actual outcome was indeed negative.
+- `False Positives (FP):` The cases in which the model incorrectly predicted the positive class (Type I error), but the actual outcome was negative.
+- `False Negatives (FN):` The cases in which the model incorrectly predicted the negative class (Type II error), but the actual outcome was positive.
+
 
 Impact of False Negatives and False Positives:
 False negatives and false positives can have
