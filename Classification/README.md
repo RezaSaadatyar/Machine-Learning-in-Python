@@ -11,8 +11,8 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
  - `Support Vector Machines: `Support vector machines are used for classification by creating a hyperplane that maximizes the distance between two classes of data points. This hyperplane, known as the decision boundary, separates the classes of data points on either side. For example, it could separate oranges from apples.
 - `Random Forest:`It is a versatile form of supervised machine learning that can be applied to both classification and regression tasks. It involves an ensemble of decision trees that work together to enhance accuracy and minimize the risk of overfitting.
 - `Naive Bayes:` The Naive Bayes algorithm operates under the assumption that the input variables or features are independent of each other, given the class label. However, this assumption is considered "naive" as it does not account for the possibility of correlations between features in reality. The three primary variants of Naive Bayes are Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes.
-
-**Evaluating a Binary Classification Model:**
+----
+**Confusion Matrix:**
 | Actual / Predicted   | Predicted Positive (P) | Predicted Negative (N) | Total |
 |-----------------------|-------------------------|-------------------------|-------|
 | Actual Positive (P)  | True Positives (TP)    | False Negatives (FN)   | P     |
@@ -24,8 +24,7 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `False Positives (FP):` The cases in which the model incorrectly predicted the positive class (Type I error), but the actual outcome was negative.
 - `False Negatives (FN):` The cases in which the model incorrectly predicted the negative class (Type II error), but the actual outcome was positive.
 
-
-Comparison of various evaluation metrics in binary classification:
+**Evaluating a Binary Classification Model:**
 | Metric                         | Formula or Description                | Range                 | Interpretation                                      |
 |--------------------------------|---------------------------------------|-----------------------|-----------------------------------------------------|
 | Accuracy                        | (TP + TN) / (TP + TN + FP + FN)       | 0 to 1                | Proportion of correct predictions overall.         |
