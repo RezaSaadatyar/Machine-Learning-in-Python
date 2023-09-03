@@ -32,9 +32,6 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 | Adaboost                          | Boosting ensemble method                       | Face detection, text classification            | Combines weak learners for strong performance                  | Sensitive to noisy data, can overfit if weak classifiers are too complex |
 | Logistic Regression with Regularization | Regularized logistic regression           | Feature selection, mitigating overfitting     | Prevents overfitting, automatic feature selection                | Requires tuning of regularization strength, not ideal for very large datasets |
 | Ensemble Methods (Voting Classifiers) | Combines multiple classifiers            | General purpose, diverse dataset classification | Improved accuracy through model combination                   | Interpretability may decrease as more models are added              |
-
-This table provides a brief overview of each binary classification model, its typical use cases, advantages, and disadvantages. The choice of model should be based on the specific requirements and characteristics of your data and problem.
-
 ----
 **Confusion Matrix:**
 | Actual / Predicted   | Predicted Positive (P) | Predicted Negative (N) | Total |
