@@ -48,3 +48,23 @@ Where:
 - SST (Total Sum of Squares) represents the sum of the squared differences between the observed values $y_{i}$ and the mean of the observed values $\bar{y}:  SST = \sum_{i=1}^{n} (y_i - \bar{y})^2$<br/>
 Here, \(n\) is the number of data points.
 
+| Metric                        | Range              | Interpretation                                      | Key Differences Among Metrics                           |
+|-------------------------------|--------------------|----------------------------------------------------|--------------------------------------------------------|
+| Mean Absolute Error (MAE)     | 0 to ∞             | Lower values indicate better accuracy.             | Treats all errors equally; simple and easy to interpret. |
+| Mean Squared Error (MSE)      | 0 to ∞             | Larger errors are more heavily penalized.          | Squares errors, giving more weight to outliers.        |
+| Root Mean Squared Error (RMSE)| 0 to ∞             | Penalizes larger errors while keeping units.        | Square root of MSE; interpretable in target units.      |
+| Coefficient of Determination  | 0 to 1 (or 0% to 100%) | Higher values indicate better fit.               | Measures explanatory power and overall model fit.     |
+
+1. **MAE vs. MSE/RMSE:**
+   - **MAE** treats all errors equally and provides a simple, interpretable measure.
+   - **MSE/RMSE** squares errors, giving more weight to larger errors, making them sensitive to outliers.
+2. **MSE vs. RMSE:**
+   - **RMSE** is the square root of MSE, providing an error metric in the same units as the target variable.
+   - **MSE** gives errors in squared units, which may not be as interpretable.
+3. **MAE/MSE/RMSE vs. $R^2$:**
+   - **MAE/MSE/RMSE** focus on error magnitude and precision.
+   - $R^2$ assesses the overall model fit and explanatory power, quantifying the proportion of variance explained by the model.
+4. **$R^2$ vs. MAE/MSE/RMSE:**
+   - **$R^2$** ranges from 0 to 1 (or 0% to 100%) and represents the proportion of variance explained.
+   - **MAE/MSE/RMSE** provide absolute error measures but do not consider variance explained.
+
