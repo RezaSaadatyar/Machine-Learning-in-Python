@@ -19,7 +19,7 @@ Regression is a technique used to analyze the connection between independent var
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
 
 **Evaluation metrics:**
-- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset. $MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$<br/>
+- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.<br/> $MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$<br/>
 Where:
   - n is the number of data points in the dataset.
   - $y_{i}$ represents the actual or observed value for the i-th data point.
