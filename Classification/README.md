@@ -13,20 +13,33 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `Naive Bayes:` The Naive Bayes algorithm operates under the assumption that the input variables or features are independent of each other, given the class label. However, this assumption is considered "naive" as it does not account for the possibility of correlations between features in reality. The three primary variants of Naive Bayes are Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes.
 
 **Evaluating a Binary Classification Model:**
+| Actual / Predicted   | Predicted Positive (P) | Predicted Negative (N) | Total |
+|-----------------------|-------------------------|-------------------------|-------|
+| Actual Positive (P)  | True Positives (TP)    | False Negatives (FN)   | P     |
+| Actual Negative (N)  | False Positives (FP)   | True Negatives (TN)    | N     |
+| Total                | P                      | N                      | P + N|
+
+- `True Positives (TP):` The cases in which the model correctly predicted the positive class, and the actual outcome was indeed positive.
 - `True Negatives (TN):` The cases in which the model correctly predicted the negative class, and the actual outcome was indeed negative.
 - `False Positives (FP):` The cases in which the model incorrectly predicted the positive class (Type I error), but the actual outcome was negative.
 - `False Negatives (FN):` The cases in which the model incorrectly predicted the negative class (Type II error), but the actual outcome was positive.
 
 
-Impact of False Negatives and False Positives:
-False negatives and false positives can have
-different impacts depending on the specific
-problem and context of the classification model.
-In a medical diagnosis scenario, a false negative
-can result in a patient not receiving the necessary
-treatment for a disease, leading to a worsened
-health condition.
-In airport security screening, a false positive
-result for a potential threat can result in
-unnecessary delays and inconvenience for the
-passengers.
+Certainly, here's a comparison of various evaluation metrics used in binary classification within a table format:
+
+| Metric                         | Formula or Description                | Range                 | Interpretation                                      |
+|--------------------------------|---------------------------------------|-----------------------|-----------------------------------------------------|
+| Accuracy                        | (TP + TN) / (TP + TN + FP + FN)       | 0 to 1                | Proportion of correct predictions overall.         |
+| Precision (Positive Predictive Value) | TP / (TP + FP)                      | 0 to 1                | Proportion of true positives among predicted positives. High precision indicates few false positives.        |
+| Recall (Sensitivity or True Positive Rate) | TP / (TP + FN)                | 0 to 1                | Proportion of true positives among actual positives. High recall indicates few false negatives.            |
+| F1-Score                        | 2 * (Precision * Recall) / (Precision + Recall) | 0 to 1                | Harmonic mean of precision and recall. Balances precision and recall. |
+| Receiver Operating Characteristic (ROC) Curve | Graph of TP rate vs. FP rate       | Area under curve (AUC-ROC) | Measures the model's ability to distinguish between classes. Higher AUC-ROC indicates better discrimination. |
+| Precision-Recall (PR) Curve     | Graph of precision vs. recall        | Area under curve (AUC-PR) | Emphasizes performance on positive class. High AUC-PR indicates good precision and recall trade-off.     |
+| Area Under the PR Curve (AUC-PR) | Area under the PR curve           | 0 to 1                | Measures the model's ability to balance precision and recall. High AUC-PR is desirable for imbalanced datasets. |
+| F-beta Score                    | (1 + beta^2) * (Precision * Recall) / (beta^2 * Precision + Recall) | 0 to 1          | Adjusts the balance between precision and recall using parameter beta. F1-Score is a special case with beta = 1. |
+| Specificity                     | TN / (TN + FP)                      | 0 to 1                | Proportion of true negatives among actual negatives. High specificity indicates few false positives.    |
+| Matthews Correlation Coefficient (MCC) | (TP * TN - FP * FN) / sqrt((TP + FP)(TP + FN)(TN + FP)(TN + FN)) | -1 to 1     | Measures the correlation between predictions and actual outcomes, correcting for chance.             |
+| Kappa Statistic (Cohen's Kappa) | (Observed agreement - Expected agreement) / (1 - Expected agreement) | -1 to 1     | Measures the agreement between predictions and actual outcomes, correcting for chance.              |
+| Log-Loss (Logarithmic Loss)    | -1/n * Σ(y log(p) + (1 - y) log(1 - p)) | 0 to ∞              | Measures the accuracy of predicted probabilities for each instance. Lower log-loss indicates better predictions. |
+
+These metrics serve different purposes and provide insights into various aspects of a binary classification model's performance. The choice of which metric to use depends on the specific goals and trade-offs of the classification task, as well as the potential consequences of false positives and false negatives in the real-world application.
