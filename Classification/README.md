@@ -25,8 +25,7 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `False Negatives (FN):` The cases in which the model incorrectly predicted the negative class (Type II error), but the actual outcome was positive.
 
 
-Certainly, here's a comparison of various evaluation metrics used in binary classification within a table format:
-
+Comparison of various evaluation metrics in binary classification:
 | Metric                         | Formula or Description                | Range                 | Interpretation                                      |
 |--------------------------------|---------------------------------------|-----------------------|-----------------------------------------------------|
 | Accuracy                        | (TP + TN) / (TP + TN + FP + FN)       | 0 to 1                | Proportion of correct predictions overall.         |
@@ -41,5 +40,3 @@ Certainly, here's a comparison of various evaluation metrics used in binary clas
 | Matthews Correlation Coefficient (MCC) | (TP * TN - FP * FN) / sqrt((TP + FP)(TP + FN)(TN + FP)(TN + FN)) | -1 to 1     | Measures the correlation between predictions and actual outcomes, correcting for chance.             |
 | Kappa Statistic (Cohen's Kappa) | (Observed agreement - Expected agreement) / (1 - Expected agreement) | -1 to 1     | Measures the agreement between predictions and actual outcomes, correcting for chance.              |
 | Log-Loss (Logarithmic Loss)    | -1/n * Σ(y log(p) + (1 - y) log(1 - p)) | 0 to ∞              | Measures the accuracy of predicted probabilities for each instance. Lower log-loss indicates better predictions. |
-
-These metrics serve different purposes and provide insights into various aspects of a binary classification model's performance. The choice of which metric to use depends on the specific goals and trade-offs of the classification task, as well as the potential consequences of false positives and false negatives in the real-world application.
