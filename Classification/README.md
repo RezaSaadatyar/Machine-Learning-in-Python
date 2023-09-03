@@ -9,23 +9,11 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 - `Logistic Regression:` This is utilized in problems involving binary classification, where the output variable has two categorical values.
 - `Neural Networks:` This algorithm clusters input, recognizes patterns, and interprets sensory data. However, neural networks require significant computational resources, making it difficult to fit them when dealing with thousands of observations.
  - `Support Vector Machines: `Support vector machines are used for classification by creating a hyperplane that maximizes the distance between two classes of data points. This hyperplane, known as the decision boundary, separates the classes of data points on either side. For example, it could separate oranges from apples.
-Random Forest: Random forest is another flexible supervised
-machine learning algorithm used for both
-classification and regression purposes. It is an
-ensemble learning algorithm that combines
-multiple decision trees to improve accuracy and
-reduce overfitting.
-Naive Bayes: Naive Bayes assumes that the features (input
-variables) are conditionally independent of each
-other given the class label. This is a "naive"
-assumption because in reality, features may be
-correlated with each other. The three main types
-of Naive Bayes algorithms: Gaussian Naive Bayes,
-Multinomial Naive Bayes and Bernoulli Naive
-Bayes.
+- `Random Forest:`It is a versatile form of supervised machine learning that can be applied to both classification and regression tasks. It involves an ensemble of decision trees that work together to enhance accuracy and minimize the risk of overfitting.
+- `Naive Bayes:` The Naive Bayes algorithm operates under the assumption that the input variables or features are independent of each other, given the class label. However, this assumption is considered "naive" as it does not account for the possibility of correlations between features in reality. The three primary variants of Naive Bayes are Gaussian Naive Bayes, Multinomial Naive Bayes, and Bernoulli Naive Bayes.
 
-Evaluating a Binary Classification Model:
-True Positive (TP) is when the patient is diseased
+**Evaluating a Binary Classification Model:**
+ - `True Positive (TP):` is when the patient is diseased
 and the model predicts "diseased"
 False Positive (FP) or Type 1 Error is when the
 patient is healthy but the model predicts
