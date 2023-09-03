@@ -32,3 +32,14 @@ Where:
   - $y_{i}$ represents the actual or observed value for the i-th data point.
   - $\hat{y}_i$ represents the predicted value for the i-th data point.
   - $|\cdot|$ denotes the absolute value.
+- `Mean Squared Error (MSE):` It measures the average of the squared differences between the actual values and the predicted values in a dataset. MSE is particularly useful when you want to penalize larger errors more heavily than smaller errors.$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$<br/>
+Where:
+   - n is the number of data points in the dataset.
+   - $y_{i}$ represents the actual or observed value for the i-th data point.
+   - $\hat{y}_i$ represents the predicted value for the i-th data point.
+- `Root Mean Squared Error (RMSE):` RMSE measures the square root of the average of the squared differences between the actual values and the predicted values in a dataset. It is particularly useful when you want to express the error metric in the same unit as the target variable and penalize larger errors more heavily. $RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$<br/>
+Where:
+  - n is the number of data points in the dataset.
+  - $y_{i}$ represents the actual or observed value for the i-th data point.
+  - $\hat{y}_i$ represents the predicted value for the i-th data point.
+ - `Coefficient of Determination (R²):` R-squared is a measure of the proportion of variance in the target variable explained by independent variables. It indicates the model's fit to the data.
