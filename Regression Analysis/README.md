@@ -42,4 +42,9 @@ Where:
   - n is the number of data points in the dataset.
   - $y_{i}$ represents the actual or observed value for the i-th data point.
   - $\hat{y}_i$ represents the predicted value for the i-th data point.
- - `Coefficient of Determination (R²):` R-squared is a measure of the proportion of variance in the target variable explained by independent variables. It indicates the model's fit to the data.
+ - `Coefficient of Determination (R²):` R-squared is a measure of the proportion of variance in the target variable explained by independent variables. It indicates the model's fit to the data. $R^2 = 1 - \frac{\text{SSR}}{\text{SST}}$<br/>
+Where:
+- SSR (Sum of Squared Residuals) represents the sum of the squared differences between the observed values $y_{i}$ and the predicted values $\hat{y}_i$ by the regression model.
+- SST (Total Sum of Squares) represents the sum of the squared differences between the observed values $y_{i}$ and the mean of the observed values $\bar{y}:  SST = \sum_{i=1}^{n} (y_i - \bar{y})^2$<br/>
+Here, \(n\) is the number of data points.
+
