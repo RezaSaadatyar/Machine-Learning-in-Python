@@ -18,3 +18,17 @@ Regression is a technique used to analyze the connection between independent var
 - `Non-linearity:` Regression models assume a linear relationship between independent and dependent variables, but non-linear relationships can result in inaccurate predictions.
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
 
+**Evaluation metrics:**
+- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset. $MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$<br/>
+Where:
+  - n is the number of data points in the dataset.
+  - $y_{i}$ represents the actual or observed value for the i-th data point.
+  - $\hat{y}_i$ represents the predicted value for the i-th data point.
+  - $|\cdot|$ denotes the absolute value, ensuring that the differences are positive.
+- `Mean Absolute Percentage Error (MAPE):` MAPE measures the average percentage difference between the actual values and the predicted values. It is expressed as a percentage and is useful for understanding the magnitude of errors in relation to the actual values. However, MAPE has some limitations, such as being sensitive to zero or very small actual values (which can result in division by zero) and not penalizing large errors proportionally. 
+$MAPE = \frac{1}{n} \sum_{i=1}^{n} \left(\frac{|y_i - \hat{y}_i|}{|y_i|}\right) \times 100$<br/>
+Where:
+  - n is the number of data points in the dataset.
+  - $y_{i}$ represents the actual or observed value for the i-th data point.
+  - $\hat{y}_i$ represents the predicted value for the i-th data point.
+  - $|\cdot|$ denotes the absolute value.
