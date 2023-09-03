@@ -8,13 +8,7 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 **Common Binary Classification Models:**<br/>
 - `Logistic Regression:` This is utilized in problems involving binary classification, where the output variable has two categorical values.
 - `Neural Networks:` This algorithm clusters input, recognizes patterns, and interprets sensory data. However, neural networks require significant computational resources, making it difficult to fit them when dealing with thousands of observations.
-Support Vector Machines: A support vector machine is typically used for
-classification problems by constructing a
-hyperplane where the distance between two
-classes of data points is at its maximum. This
-hyperplane is known as the decision boundary,
-separating the classes of data points (e.g.,
-oranges vs. apples) on either side of the plane.
+ - `Support Vector Machines: `Support vector machines are used for classification by creating a hyperplane that maximizes the distance between two classes of data points. This hyperplane, known as the decision boundary, separates the classes of data points on either side. For example, it could separate oranges from apples.
 Random Forest: Random forest is another flexible supervised
 machine learning algorithm used for both
 classification and regression purposes. It is an
