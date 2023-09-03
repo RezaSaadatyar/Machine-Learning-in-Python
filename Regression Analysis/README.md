@@ -19,7 +19,7 @@ Regression is a technique used to analyze the connection between independent var
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
 
 **Evaluation metrics:**
-- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.<br/> $MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$<br/>
+- `Mean Absolute Error (MAE):` MAE is a commonly used metric in statistics and machine learning to measure the average absolute difference between the actual values and the predicted values in a dataset.<br/>
 Where:
   - n is the number of data points in the dataset.
   - $y_{i}$ represents the actual or observed value for the i-th data point.
@@ -71,8 +71,8 @@ Here, \(n\) is the number of data points.
 
 | Metric                        | Range              | Interpretation                                              | Formula                                                         | Key Difference                                                |
 |-------------------------------|--------------------|------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
-| Mean Absolute Error (MAE)     | 0 to ∞             | Lower values indicate better accuracy.                     | \(\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|\)  | Treats all errors equally; simple and interpretable.          |
-| Mean Squared Error (MSE)      | 0 to ∞             | Larger errors are more heavily penalized.                  | \(\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2\) | Squares errors, emphasizing larger errors; sensitive to outliers. |
-| Root Mean Squared Error (RMSE)| 0 to ∞             | Penalizes larger errors while keeping units interpretable. | \(\text{RMSE} = \sqrt{\text{MSE}}\)                            | Square root of MSE; interpretable in target units.            |
-| Coefficient of Determination  | 0 to 1 (or 0% to 100%) | Higher values indicate better fit.                        | \(R^2 = 1 - \frac{\text{SSR}}{\text{SST}}\)                   | Measures explanatory power and overall model fit.             |
+| MAE     | 0 to ∞             | Lower values indicate better accuracy.                     |$$MAE = \frac{1}{n} \sum_{i=1}^{n} $$| | Treats all errors equally; simple and interpretable.          |
+| MSE     | 0 to ∞             | Larger errors are more heavily penalized.                  | \(\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2\) | Squares errors, emphasizing larger errors; sensitive to outliers. |
+| RMSE| 0 to ∞             | Penalizes larger errors while keeping units interpretable. | \(\text{RMSE} = \sqrt{\text{MSE}}\)                            | Square root of MSE; interpretable in target units.            |
+| $R^2$  | 0 to 1 (or 0% to 100%) | Higher values indicate better fit.                        | \(R^2 = 1 - \frac{\text{SSR}}{\text{SST}}\)                   | Measures explanatory power and overall model fit.             |
 
