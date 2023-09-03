@@ -39,3 +39,8 @@ It is a type of supervised learning algorithm used in machine learning. It aims 
 | Matthews Correlation Coefficient (MCC) | (TP * TN - FP * FN) / sqrt((TP + FP)(TP + FN)(TN + FP)(TN + FN)) | -1 to 1     | Measures the correlation between predictions and actual outcomes, correcting for chance.             |
 | Kappa Statistic (Cohen's Kappa) | (Observed agreement - Expected agreement) / (1 - Expected agreement) | -1 to 1     | Measures the agreement between predictions and actual outcomes, correcting for chance.              |
 | Log-Loss (Logarithmic Loss)    | -1/n * Σ(y log(p) + (1 - y) log(1 - p)) | 0 to ∞              | Measures the accuracy of predicted probabilities for each instance. Lower log-loss indicates better predictions. |
+
+`A high precision model is conservative: `it doesn’t always recognize the class correctly, but when it does, we can be assured that its answer is correct.<br/>
+`A high recall model is liberal:` it recognizes a class much more often, but in doing so it tends to include a lot of noise as well (false positives).<br/>
+`F1 score:` If our F1 score increases, it means that our model has increased performance for accuracy, recall or both.<br/>
+`ROC AUC:` The area under the ROC curve (AUC) is a single scalar value that measures the overall performance of the model. The AUC ranges from 0 to 1, with a higher value indicating better performance. An AUC of 0.5 indicates a random guess, while an AUC of 1.0 indicates perfect classification.
