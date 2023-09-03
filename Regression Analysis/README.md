@@ -17,3 +17,4 @@ Regression is a technique used to analyze the connection between independent var
 - `Multicollinearity:` Multicollinearity happens when two or more independent variables are strongly correlated. This can cause problems in determining the individual impact of each variable and may result in unstable parameter estimates.
 - `Non-linearity:` Regression models assume a linear relationship between independent and dependent variables, but non-linear relationships can result in inaccurate predictions.
 - `Outliers:` Outliers are data points that differ significantly from the majority of the data and can have a significant impact on regression models, leading to inaccurate parameter estimates.
+
