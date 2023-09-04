@@ -1,7 +1,7 @@
 **Clustring**<br/>
 Clustering is a type of unsupervised machine learning technique used to group similar data points together based on certain criteria or features. Clustering methods aim to discover hidden patterns or structures within the data. 
 
-**clustering methods:**
+**Clustering Algorithms:**
  - `K-Means Clustering:`
    - It partitions the data into K clusters, where K is a user-defined parameter.
    - It minimizes the sum of squared distances between data points and the centroid of their assigned cluster.
