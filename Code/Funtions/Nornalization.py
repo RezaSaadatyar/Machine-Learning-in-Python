@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn import preprocessing
-import matplotlib.pyplot as plt
 
 
 # =========================================== Data normalization =================================================                          
@@ -18,3 +17,5 @@ def data_normalization(x_train, x_test, method=1):
     x_test = norm.transform(x_test)
     
     return x_train, x_test
+
+# n1=preprocessing.normalize(x_train,norm='l1',axis=0)    # l1; l2
