@@ -33,6 +33,7 @@ def plot_decision_regions(data_train, label_train, data_test, label_test, model,
     for i in range(0, len(np.unique(y_combined))):
         ax1.plot(data_train[label_train == lab_tr[i], 0], data_train[label_train == lab_tr[i], 1], '.', color=colors[i], label=lab_tr[i], markersize=10)
         ax2.plot(data_test[label_test == lab_te[i], 0], data_test[label_test == lab_te[i], 1], '.', color=colors[i], label=lab_tr[i], markersize=10)
+        
     ax1.title.set_text('Training'), ax2.title.set_text('Test'), ax1.legend(title='Class', ncol=3, handlelength=0.8, handletextpad=0.2)
     ax2.legend(title='Class', ncol=3, handlelength=0.8, handletextpad=0.2), ax1.set(xlabel='Feature 1', ylabel='Feature 2'), ax2.set(xlabel='Feature 1')
     plt.tight_layout(), plt.show()
