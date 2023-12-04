@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import neighbors
+
 def KNN_Optimal(Data_Train, Label_Train, Data_Test, Label_Test, N):
     if np.shape(Data_Train)[0] < np.shape(Data_Train)[1]:  # Convert Data training & Test >>>> m*n; m > n
         Data_Train = Data_Train.T
