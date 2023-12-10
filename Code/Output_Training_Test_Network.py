@@ -42,14 +42,7 @@ def output_network(x, labels, model, type_class, k_fold):
         st = np.str(roc_auc_tr)
         ax1.plot(fpr_tr, tpr_tr, lw=1, alpha=0.4, label='ROC fold ' + np.str(i) + ' (AUC = ' + st[0:4] + ')')
 
-        # ----------------------------------------- Test Section -------------------------------------
-        data_test = x[test]
-        label_test = labels[test]
-        label_predict_test = model.predict(data_test)
-        accuracy_test = model.score(data_test, label_test)
-        cr_test = metrics.classification_report(label_test, label_predict_test, labels=np.unique(label_test))
-        label_predict_test_prob = model.predict_proba(data_test)
-        accuracy_te.append(accuracy_test)
+       
 
         # -------------------------------------- ROC for test -----------------------------------------
         fpr_te, tpr_te, roc_auc_te = Roc_curve(label_test, label_predict_test_prob)
