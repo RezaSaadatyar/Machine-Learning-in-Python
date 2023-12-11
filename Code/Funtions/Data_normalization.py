@@ -1,16 +1,15 @@
 import pandas as pd
 from sklearn import preprocessing
 
-
-# =========================================== Data normalization =================================================                          
-def data_normalization(x_train, x_test, method=1):
+# ============================================== Data normalization ===============================================                         
+def data_normalization(x_train, x_test, method="MinMaxScaler"):
     if x_train.ndim == 1:
         x_train = x_train.reshape(-1, 1)
         x_test = x_test.reshape(-1, 1)
         
-    if method == 1:
+    if method == "MinMaxScaler":
         norm = preprocessing.MinMaxScaler()
-    elif method == 2:
+    elif method == "StandardScaler":
         norm = preprocessing.StandardScaler()
         
     x_train = norm.fit_transform(x_train)
