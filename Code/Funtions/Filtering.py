@@ -1,14 +1,14 @@
 from scipy import signal
 
 
-# ================================================ Filtering ====================================================
-def filtering(data, f_low, f_high, order, Fs, filter_type):
+# ==================================================== Filtering =========================================================
+def filtering(data, f_low, f_high, order, fs, filter_type="low"):
     if data.ndim > 1:
         if data.shape[0] > data.shape[1]:
             data = data.T
             
-    f_low = f_low / (Fs / 2)
-    f_high = f_high / (Fs / 2)
+    f_low = f_low / (fs / 2)
+    f_high = f_high / (fs / 2)
     
     if filter_type == "low":
         b, a = signal.butter(order, f_low, btype='low')
