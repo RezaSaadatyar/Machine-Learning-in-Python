@@ -4,25 +4,21 @@ from scipy import stats
 from sklearn import preprocessing
 from matplotlib import pyplot as plt
 
-# ================================================ Plot features =========================================================   
 def plot_features(data, labels, fig_size=(4, 3), title="Data raw", normalize_active="on"):
-   
+   # --------------------------------------------------- Data transpose --------------------------------------------------
    if data.shape[0] < data.shape[1]: 
-       data = data.T
-       
+       data = data.T 
+   # ------------------------------------------------- Unique labels -----------------------------------------------------    
    lab = np.unique(labels)
    colors = np.array(sns.color_palette("bright", len(lab)))
-   
-   if data.shape[0] < data.shape[1]: 
-       data =data.T
-       
-   if data.shape[1] < 3:
-       fig = plt.figure(figsize=fig_size)
-    
-   if normalize_active == "on":                          # Data normalization
+   # ------------------------------------------------- Data normalization ------------------------------------------------ 
+   if normalize_active == "on":                          
         norm = preprocessing.MinMaxScaler()
         data = norm.fit_transform(data)
-
+   # ----------------------------------------------------- Plot ---------------------------------------------------------- 
+   if data.shape[1] < 3:
+       fig = plt.figure(figsize=fig_size)
+       
    if data.shape[1] == 1:
       
       grid = plt.GridSpec(4, 4, hspace=0.06, wspace=0.06)
@@ -101,7 +97,7 @@ def plot_features(data, labels, fig_size=(4, 3), title="Data raw", normalize_act
       ax2.tick_params(bottom=False, top=False, labelbottom=False, right=False, left=False, labelleft=False)
       ax3.tick_params(bottom=False, top=False, labelbottom=False, right=False, left=False, labelleft=False)
 
-   ax.grid(visible="on")
+   ax.grid(True, linestyle='--', which='major', color='grey', alpha=0.3)
    ax1.set_title(title, fontsize=10, pad=0, y=1)
    ax1.spines[['top', 'left', 'right']].set_visible(False),    
    ax1.tick_params(bottom=False, top=False, labelbottom=False, right=False, left=False, labelleft=False)
