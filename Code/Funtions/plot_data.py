@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # ================================================= Plot data ============================================================
-def plot_data(filtered_data, Fs=None, first_point=0, last_point=100, val_ylim='', size_fig=(7,5), title='', display_figure="off"):
+def plot_data(filtered_data, fs=None, first_point=0, last_point=100, val_ylim='', size_fig=(7,5), title='', display_figure="off"):
     
     if display_figure == "on":
         if filtered_data.shape[0] < filtered_data.shape[1]:
@@ -12,15 +13,15 @@ def plot_data(filtered_data, Fs=None, first_point=0, last_point=100, val_ylim=''
         
         std = np.sort(np.std(filtered_data, axis=0))
         if len(std) > 100:
-            std = np.mean(std[1:len(std)-1])
+            std = np.std(std[1:len(std)-1])
         else:
-            std = np.mean(std)
+            std = np.std(std)
         
         _, axs = plt.subplots(nrows=1, sharey='row', figsize=size_fig)
         offset = np.arange(filtered_data.shape[1]*std*val_ylim, 1, -std*val_ylim)
       
-        if Fs is not None and np.array(Fs) > 0:
-            time = (np.linspace(start=first_point/Fs, stop=last_point/Fs, num=len(filtered_data))).flatten()
+        if fs is not None and np.array(fs) > 0:
+            time = (np.linspace(start=first_point/fs, stop=last_point/fs, num=len(filtered_data))).flatten()
             line = axs.plot(time, filtered_data + offset, linewidth=1)
             axs.set_xlabel('Time (sec)', fontsize=10)
         else:
