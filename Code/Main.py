@@ -11,10 +11,10 @@ from Filtering import filtering
 from Clustering import clustering
 from Preparing_data import preparing_data
 from Normalize import normalize_data
-from Classification import classification
+from Funtions.Classification import classification
 from Plot_clustering import plot_cluster
-from Feature_Selection import featureselection
-from Feature_Extraction import feature_extraction
+from Funtions.Feature_Selection import featureselection
+from Funtions.Feature_Extraction import feature_extraction
 from Output_Training_Test_Network import output_network
 # ============================================Step 1: Preparing the data ==============================================
 iris = datasets.load_iris()
