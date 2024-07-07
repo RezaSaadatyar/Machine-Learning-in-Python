@@ -7,7 +7,6 @@
 - 4. Prediction and performance check
 - 5. Iris dataset classification & clustering example<br/>
 
-
 :arrow_forward:The program will run automatically when you run **code/file Main.py**, and you do not need to run any of the other codes. Depending on your goal, you can execute all steps independently or interdependently within the code/file main. In addition, you can copy and run each section along with its related files in your own code or disable each section with a **#**. To run the program, the only thing you need is your input, which is **data and labels (Data = Your data, Labels = Your label/target)**.
 
 ---
