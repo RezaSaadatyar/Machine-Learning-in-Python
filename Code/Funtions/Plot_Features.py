@@ -44,6 +44,10 @@ def plot_features(data, labels, title=None, location_legend=5, fig_size=(4, 3)):
     data = data.T if data.ndim > 1 and data.shape[0] < data.shape[-1] else data
     
     # ------------------------------------------- Unique labels ------------------------------------------
+    if len(labels.shape) > 1:                       # Check if the labels array is multi-dimensional
+        labels = np.argmax(labels, axis=1)          # Use argmax to find the original labels
+        mod = preprocessing.LabelEncoder()          # Initialize the LabelEncoder
+        labels = mod.fit_transform(labels)          # Fit and transform the labels using the LabelEncoder
     classes = np.unique(labels)
     colors = sns.color_palette("bright", len(classes)).as_hex() # Define colors
     # -------------------------------------- Data normalization ------------------------------------------
@@ -137,9 +141,9 @@ def plot_features(data, labels, title=None, location_legend=5, fig_size=(4, 3)):
             ax3.fill_betweenx(bins, 0, -stats.norm.pdf(bins, np.mean(data[labels==val, 2]), np.std(data[labels
                               ==val, 2])), alpha=0.4, color=colors[i])
         
-        ax.view_init(5, -110)
+        ax.view_init(5, -120)
         ax.set_xlabel('Feature 1', fontsize=10)
-        ax.set_ylabel('Feature 2', fontsize=10)
+        ax.set_ylabel('Feature 2', fontsize=10, va='center_baseline')
         ax.set_zlabel('Feature 3', fontsize=10, labelpad=-5, va='center') # labelpad=1,
         ax.tick_params(axis='x', length=1.5, width=1, which='both', bottom=True, top=False, labelbottom=True, 
                        labeltop=False, pad=-6, rotation=-90)
