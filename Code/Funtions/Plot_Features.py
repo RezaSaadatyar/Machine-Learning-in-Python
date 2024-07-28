@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing
 
 # =========================================== Plot features ==============================================
-def plot_features(data, labels, title=None, location_legend=5, fig_size=(4, 3)):
+def plot_features(data, labels, title=None, fig_size=(4, 3)):
     """
     ============================= Presented by: Reza Saadatyar (2023-2024) ===============================
     =============================== E-mail: Reza.Saadatyar@outlook.com ===================================
@@ -161,8 +161,12 @@ def plot_features(data, labels, title=None, location_legend=5, fig_size=(4, 3)):
     ax1.set_title(title, fontsize=10, pad=0, y=1)
     ax1.spines[['top', 'left', 'right']].set_visible(False)
     ax1.tick_params(bottom=False, top=False, labelbottom=False, right=False, left=False, labelleft=False)
-    ax.legend(title='Class', fontsize=9, loc=location_legend, ncol=3, handlelength=0, handletextpad=0.25, 
+    if data.shape[-1] < 3:
+        ax.legend(title='Class', fontsize=9, loc="best", ncol=3, handlelength=0, handletextpad=0.25, 
               frameon=True, labelcolor='linecolor')
+    else:
+        ax.legend(title='Class', fontsize=9, loc=5, ncol=3, handlelength=0, handletextpad=0.25, 
+                  frameon=True, labelcolor='linecolor', bbox_to_anchor=(0.14, 0.95))
 
     fig.subplots_adjust(wspace=0, hspace=0)
     plt.autoscale(enable=True, axis="x", tight=True)
