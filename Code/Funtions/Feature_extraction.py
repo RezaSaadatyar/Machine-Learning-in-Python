@@ -34,6 +34,7 @@ def feature_extraction(data, labels, number_feature, max_iter=100, number_neighb
                 output_feature = mod.fit_transform(data)
         
         if display_figure == "on":
-                Plot_features.plot_features(output_feature, labels, title=type_feature_extraction)
+                Plot_features.plot_features(output_feature, labels, title="Feature extration: " +
+                                            type_feature_extraction.upper())
         
         return output_feature
