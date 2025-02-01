@@ -9,7 +9,7 @@
 `Indexing & Slicing`<br/>
 `Unsqueeze & squeeze`<br/>
 `Array Manipulation`<br/>
-`
+
 
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
