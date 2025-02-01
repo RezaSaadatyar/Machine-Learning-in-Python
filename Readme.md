@@ -1,5 +1,68 @@
 **Machine Learning with Python**<br/>
 
+**01_numpy.ipynb:**
+**1️⃣ N-d Array**<br/>
+`0-dimensional (Scalar):`<br/>
+`1-dimensional (Vector):`<br/>
+`2-dimensional (Matrix):`<br/>
+`3-dimensional (or higher):`<br/>
+
+**2️⃣ Getting information from Numpy**<br/>
+`shape`<br/>
+`dtype`<br/>
+
+**3️⃣ Math Operations**<br/>
+`Addition`<br/>
+`Subtraction`<br/>
+`Multiplication (element-wise)`<br/>
+`Division`<br/>
+`Matrix multiplication`<br/>
+`Mean & std`
+ 
+**4️⃣ Special Arrays**<br/>
+`zeros`<br/>
+`ones`<br/>
+`empty`<br/>
+`eye`<br/>
+`full`<br/>
+`arange`<br/>
+`reshape`<br/>
+`linspace`<br/>
+
+**5️⃣ Random Arrays**<br/>
+`np.random.rand:`<br/>
+`np.random.randn:`<br/>
+`np.random.randint:` <br/>
+`np.random.uniform:` <br/>
+🔸 `np.random.permutation(value):` <br/>
+🔸 `np.transpose(input, axes):` <br/>
+
+**6️⃣ Indexing & Slicing**<br/>
+`Indexing:`<br/>
+`Slicing:` <br/>
+   - `start:end`
+   - `start:`
+   - `:end`
+   - `:` 
+   - `start:end:step`
+
+**7️⃣ Unsqueeze & squeeze**<br/>
+
+**8️⃣ Array Manipulation**<br/>
+`Stacking:` <br/>
+`Splitting:` <br/>
+`Delete:` <br/>
+`Copy, Deepcopy:` <br/>
+`Repeat:`<br/>
+`Tile:` <br/>
+`Unique:`<br/>
+`Sort, Argsort:`<br/>
+`Nanargmax, Nanargmin:`<br/>
+`Where, Argwhere, Extract:`<br/>
+
+
+
+
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
 - 2. Preparing the data
