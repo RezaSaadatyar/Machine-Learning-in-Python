@@ -10,6 +10,10 @@
 `Unsqueeze & squeeze`<br/>
 `Array Manipulation`<br/>
 
+**02_pandas.ipynb:**<br/>
+`Series & DataFrame`<br/>
+`Math Operations`<br/>
+`Missing Data Handling`<br/>
 
 ***This repository Covers:***
 - 1. A brief about types of classification & clustering algorithms
